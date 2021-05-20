@@ -1,1 +1,74 @@
 /* Стилизация кнопки */
+/*цвета будут тянуться из main после слияния*/
+:root {
+   
+    --blue-2: #4263EB;
+    --blue-3: #2342C0;
+    --purple-2: #5028C6;
+    ;
+}
+/* Стилизация кнопки */
+.button{
+    width: 189px;
+    height: 48px;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* identical to box height */
+    text-align: center;
+    color : var(--white);
+}
+.button-primary{
+    background-color: var(--blue-2);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button-secondary{
+    background-color: var(--purple);    
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button-alternate{
+    box-sizing: border-box;
+    border: 1px solid var(--grey-3);
+    background-color: var(--white);
+    color: var(--grey-4); 
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+.button:active{
+    cursor: default;
+}
+.button:disabled{
+    opacity: 0.5;    
+    cursor: not-allowed;
+}
+.button-primaryHovered, .button-primary:hover{
+    background-color: var(--blue-3);  
+}
+.button-secondaryHovered, .button-secondary:hover{
+    background-color: var(--purple-2);  
+}
+.button-alternateHovered, .button-alternate:hover{
+    border-color: var(--black);   
+}
+.button-list{   
+    display: inline-block;
+    columns: 3 auto;  
+    column-gap: 0px;   
+}
+.button-list__button{
+    padding: 0;
+   /* padding-top padding-left: 0;*/
+}
+.button-list__button:not(.button-list_alternate){
+    padding-right: 33px;
+}
+.button-list__button:not(.button-list_disabled){
+    padding-bottom: 16px;
+}
