@@ -9,33 +9,20 @@
 }
 /* Стилизация кнопки */
 .button{
-    width: 189px;
-    height: 48px;
+    width: 100%;
+    height: 100%;    
     border-radius: 8px;
+    text-align: center;
+    color : var(--white);
+    box-sizing: border-box;  
+    display: inline-block;  
+}
+.button-font{   
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
-    /* identical to box height */
-    text-align: center;
-    color : var(--white);
-}
-.button-primary{
-    background-color: var(--blue-2);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-}
-.button-secondary{
-    background-color: var(--purple);    
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-}
-.button-alternate{
-    box-sizing: border-box;
-    border: 1px solid var(--grey-3);
-    background-color: var(--white);
-    color: var(--grey-4); 
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button:hover{
     cursor: pointer;
@@ -48,6 +35,20 @@
     opacity: 0.5;    
     cursor: not-allowed;
 }
+.button-primary{
+    background-color: var(--blue-2);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button-secondary{
+    background-color: var(--purple);    
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button-alternate{   
+    border: 1px solid var(--grey-3);
+    background-color: var(--white);
+    color: var(--grey-4); 
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
 .button-primaryHovered, .button-primary:hover{
     background-color: var(--blue-3);  
 }
@@ -57,14 +58,17 @@
 .button-alternateHovered, .button-alternate:hover{
     border-color: var(--black);   
 }
+/*for display*/
 .button-list{   
     display: inline-block;
     columns: 3 auto;  
     column-gap: 0px;   
 }
 .button-list__button{
+    width: 189px;
+    height: 48px;
     padding: 0;
-   /* padding-top padding-left: 0;*/
+    margin:0;
 }
 .button-list__button:not(.button-list_alternate){
     padding-right: 33px;
