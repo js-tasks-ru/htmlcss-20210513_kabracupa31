@@ -1,7 +1,6 @@
 /* Стилизация аккордеона */
-/* Стилизация аккордеона */
 .accordion{
-    max-width: 730px;
+    width: 100%;
 }
 .accordion__item {
     padding: 32px 24px;
@@ -14,7 +13,7 @@
 .accordion__item  .accordion__item_black{
     color: var(--black);
     margin:0;
-    
+
 }
 .accordion__item  .accordion__item_hidden{
     margin: 16px 0 0 0;
@@ -30,28 +29,23 @@
     display: none;   
 }
 
-.accordion__item  .accordion__item_summary::before {        
-    
+.accordion__item  .accordion__item_summary::before {          
+
     float: right;
     content: url(../../assets/images/accordion-closed.svg);
 }
 .accordion__item[open] .accordion__item_summary::after {
-     
-    
+    /*  все ломается(*/   
+
     margin: -24px 0 0 0;
     background-color: var(--white);
     float: right;
     content: url(../../assets/images/accordion-opened.svg);    
-  }
-
+  }  
   .accordion-container{
-    width: 100%;
-    height: 100%;
-   
-    
+    max-width: 730px;  
   }
   .accordion-container .accordion{
-      margin: auto;
+      margin: 0;
+      padding: 0;
   }
-   
-  
