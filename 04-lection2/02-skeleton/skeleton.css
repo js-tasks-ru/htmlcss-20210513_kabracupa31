@@ -1,0 +1,65 @@
+.sceleton-container{   
+     
+    width: 100%;
+}
+.sceleton-item {       
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px;
+
+    background-color: var(--white);
+    display: flex; 
+    flex-direction: column;  
+    flex-basis: 579px;
+    flex-grow: 1; 
+   
+}
+.sceleton-item-background{
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);    
+ }
+.sc-header{
+    display:flex;
+    margin-bottom: 24px;  
+}
+.sc-header__avatar{
+    display:flex;
+    
+    /* circle тянет в этот div +4px ??*/
+    height: 64px;
+    padding-right: 16px;
+}
+.sc-headerItems{
+    display:flex;
+    
+    flex-direction: column; 
+    align-items:flex-start;
+    justify-content:center;
+    width: 100%; 
+}
+.sc-header__item{
+    height: 20px;
+    width: 100%;
+    margin: 4px 0;
+}
+.sc-content{
+    
+    display: flex;
+    flex-direction: column;  
+    padding-right: 16px;   
+}
+.sc-content *{   
+    margin-bottom: 8px;
+    
+} 
+.sc-content__item{
+    height: 20px;
+    width: 100%;
+    
+}
+.sc-header__item-first{   
+    width: 40%;  
+}
+.sc-header__item-second{ 
+    width: 60%;  
+}
