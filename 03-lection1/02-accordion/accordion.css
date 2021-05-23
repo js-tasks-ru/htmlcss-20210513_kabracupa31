@@ -30,13 +30,13 @@
     display: none;   
 }
 
-.accordion__item  .accordion__item_summary::before {          
+.accordion__item  .accordion__item_summary::before {        
     
     float: right;
     content: url(../../assets/images/accordion-closed.svg);
 }
 .accordion__item[open] .accordion__item_summary::after {
-    /*  все ломается(*/   
+     
     
     margin: -24px 0 0 0;
     background-color: var(--white);
