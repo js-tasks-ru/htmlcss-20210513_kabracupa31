@@ -4,29 +4,60 @@
     <head>
         <link rel="stylesheet" href="./assets/css/_normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./components/page/page.css">
         <link rel="stylesheet" href="./assets/css/_tipography.css">
+        <link rel="stylesheet" href="./components/header/header.css">
+        <link rel="stylesheet" href="./components/nav/nav.css">
+        <link rel="stylesheet" href="./components/page/page.css">
+        <link rel="stylesheet" href="./components/preview/preview.css">
+        <link rel="stylesheet" href="./components/footer/footer.css">
     </head>
-    <body style="max-width: 1100; align-content: center;">
+    <body>
         <div class="page">
-            <div class="page__box">
-                <header class="header">  
-                    <section class="header__logo">
-                        <img class="header__image" src="./assets/images/logo-rectangle.svg" alt="This is a logotype">
-                        <img class="header__image" src="./assets/images/logo-circle.svg">
-                        <img class="header__image" src="./assets/images/logo-triangle.svg">
-                    </section>          
-                    <h1 class="header__title">Reusable component library</h1>        
+            <div class="header">
+                <header class="page__box header__container">  
+                    <div class="header__logo">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="30" fill=var(--black)>
+                        </svg>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="16" fill=var(--black)>
+                        </svg>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0L32 32H0V0Z" fill=var(--black)>
+                        </svg>
+                    </div>  
+                    <nav>
+                        <a href="" class="nav__item nav__item-active">Component</a>
+                        <a href="" class="nav__item">About</a>
+                        <a href="" class="nav__item">Contact</a>
+                    </nav>           
                 </header>
+                <div class="page__box">    
+                    <h1 class="header__title">Reusable component library</h1>
+                </div> 
             </div>
-            <div class="page__box">
-                <main class="main">
-                </main>
-            </div>
-            <div class="page__box">
-                <footer class="footer">            
-                    <h2 class="footer__title">About</h2>
-                    <p class="footer__content">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>        
+            <main class="page__box page__main">
+                <div class="preview">
+                    <div class="preview__card">
+                    </div>
+                    <div class="preview__card">                        
+                    </div>
+                    <div class="preview__card">                        
+                    </div>
+                    
+                    <div class="preview__card">                        
+                    </div>
+                    <div class="preview__card">                        
+                    </div>
+                    <div class="preview__card">                        
+                    </div>                            
+                </div>
+            </main>
+            <div class="footer">
+                <footer class="page__box footer__container"> 
+                        <h2 class="footer__title">About</h2>
+                        <p class="footer__content">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>        
+                    
                 </footer>
             </div>
         </div>
