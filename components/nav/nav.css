@@ -4,8 +4,8 @@
     color: var(--grey-3);
 }
 .nav__item:not(:last-child) {
-    padding-right: 32px;
+    margin-right: 32px;
 }
-.nav__item-active {
+.nav__item_active {
     color: var(--black);   
 }

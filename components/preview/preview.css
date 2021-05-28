@@ -2,10 +2,11 @@
     display:flex;
     padding: 53px 0 189px;   /*68 204 */
     margin: 0 -15px;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;  
+    justify-content: center;  
 }
 .preview__card{    
-    flex-grow: 1;
+    width: calc(33% - 30px);
     height: 367px;
     margin: 15px;
 
@@ -13,12 +14,3 @@
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
 }
-
-  .preview::before {
-    content: '';
-    width: 100%;
-    order: 1;
-  }
-  .preview__card:nth-child(n + 4) {
-    order: 1;
-  }

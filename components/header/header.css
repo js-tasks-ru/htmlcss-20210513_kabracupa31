@@ -13,11 +13,10 @@
 }
 .header__logo > *:not(:last-child) {
     
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 .header__title{
-    padding-top: 41px;
-    margin:0 auto;
+    margin: 41px auto 0;
     color: var(--black);
 }
