@@ -7,31 +7,53 @@
         <link rel="stylesheet" href="./histogram.css">
     </head>
     <body>
-        <div class="histogram-container">
-            <div class="histogram-item">
-                <header class="hs-header">
-                    <div class="hs-order">
-                        <p class="hs-order__title">Total orders</p> 
-                        <h4 class="hs-order__count">50254</h4>                            
-                    </div>
-                    <div class="hs-link">   
-                        <!--p используется для подтягивания шрифтов-->
-                        <a class="hs-link__item" href="" ><p class="hs-link__title">View all</p></a>             
-                    </div>
-                </header>
-               
-                <main class="hs-content">                    
-                    <script type="text/javascript">
-                        var histogramColumnsHeight = [50, 135, 22,39,22,30,39,50,11,30,35,11,50,11,39,30,22,35,30,11,39,35,45,30,11,30,11,35,17];
-                        HistogramHeight = document.getElementsByClassName("hs-content")[0].clientHeight;
-                        maxHistogramColimnHeight = Math.max.apply(null, histogramColumnsHeight);
-                        if (maxHistogramColimnHeight< HistogramHeight) maxHistogramColimnHeight=HistogramHeight;
-                        for (let i = 0; i < histogramColumnsHeight.length; i++) {
-                            document.write('<div class="hs-content__item" style="height:' +parseInt(histogramColumnsHeight[i]*(HistogramHeight / maxHistogramColimnHeight))+'px"><\/div>');    
-                        }
-                    </script>
-                </main>    
-            </div>
-        </div>
+        <div class="histogram">
+            <header class="histogram__header">
+                <div class="histogram__header-wrapper">
+                    <span class="histogram__title">Total orders</span> 
+                    <span class="histogram__count">50254</span>                            
+                </div>
+                <div class="histogram__link-wrapper">   
+                    <a class="histogram__link" href="#" >View all</a>             
+                </div>
+            </header>
+            <main class="histogram__bars">
+                <div class="histogram__bar" style="height:50px"></div> 
+                <div class="histogram__bar" style="height:35px"></div>                 
+                <div class="histogram__bar" style="height:22px"></div>
+                <div class="histogram__bar" style="height:39px"></div>
+                <div class="histogram__bar" style="height:22px"></div>
+                <div class="histogram__bar" style="height:30px"></div>
+                <div class="histogram__bar" style="height:39px"></div>
+                <div class="histogram__bar" style="height:50px"></div>
+                <div class="histogram__bar" style="height:11px"></div>
+                <div class="histogram__bar" style="height:30px"></div>
+                <div class="histogram__bar" style="height:35px"></div>
+                <div class="histogram__bar" style="height:11px"></div>
+                <div class="histogram__bar" style="height:50px"></div>
+                <div class="histogram__bar" style="height:11px"></div>
+                <div class="histogram__bar" style="height:39px"></div>
+                <div class="histogram__bar" style="height:22px"></div>
+                <div class="histogram__bar" style="height:30px"></div>
+                <div class="histogram__bar" style="height:39px"></div>
+                <div class="histogram__bar" style="height:50px"></div>
+                <div class="histogram__bar" style="height:11px"></div>
+                <div class="histogram__bar" style="height:30px"></div>
+                <div class="histogram__bar" style="height:35px"></div>
+                <div class="histogram__bar" style="height:50px"></div>
+                <div class="histogram__bar" style="height:11px"></div>
+                <div class="histogram__bar" style="height:39px"></div>
+                <div class="histogram__bar" style="height:30px"></div>
+                <div class="histogram__bar" style="height:22px"></div>
+                <div class="histogram__bar" style="height:35px"></div>
+                <div class="histogram__bar" style="height:45px"></div>
+                <div class="histogram__bar" style="height:30px"></div>
+                <div class="histogram__bar" style="height:11px"></div>
+                <div class="histogram__bar" style="height:30px"></div>
+                <div class="histogram__bar" style="height:11px"></div>
+                <div class="histogram__bar" style="height:35px"></div>
+                <div class="histogram__bar" style="height:17px"></div>
+            </main>    
+        </div>  
     </body>
 </html>
