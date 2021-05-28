@@ -6,7 +6,8 @@
     justify-content: center;  
 }
 .preview__card{    
-    width: calc(33% - 30px);
+    
+    flex-basis: 350px;
     height: 367px;
     margin: 15px;
 
