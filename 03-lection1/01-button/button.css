@@ -22,14 +22,10 @@
     font-size: 16px;
     line-height: 19px;
 
-    cursor: default;
+    cursor: pointer;
 }
 .button_full-width {
     width: 100%; 
-}
-
-.button:hover{
-    cursor: pointer;
 }
 .button[disabled]{
     opacity: 0.5;  
