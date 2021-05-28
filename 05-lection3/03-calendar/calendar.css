@@ -1,9 +1,5 @@
 :root{
-    --grey-5: #90A0B7;
-    --grey-6: #334D6E;
-    --blue-8: #4263EB;
-    --blue-9: #A0B1F5;
-    --blue-9-alfa20: #A0B1F520;
+   
 }
 .calendar{
     height: 324px;
@@ -35,7 +31,6 @@
     bottom: 0;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
 }
 
 .calendar__day{
@@ -44,22 +39,22 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: var(--grey-6);
+    color: var(--grey-7);
     
     display: flex;
     align-items: center;
     justify-content: center;   
 }
-.calendar__dayCaption{
+.calendar__day-caption{
     font-size: 14px;
     color: var(--grey-5);
     align-items: flex-end;
 }
-.calendar__day-selectedEnds{
+.calendar__day_selected-ends{
     color: var(--white);
-    background: var(--blue-8);
+    background: var(--blue-3);
 }
-.calendar__day-selected{ 
-    background: var(--blue-9-alfa20);
-    color: var(--grey-6);
+.calendar__day_selected{ 
+    background: var(--blue-4-alfa20);
+    color: var(--grey-7);
 }
