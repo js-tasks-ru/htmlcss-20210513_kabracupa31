@@ -9,53 +9,54 @@
 }
 /* Стилизация кнопки */
 .button{
-    width: 100%;
-    height: 100%;    
+    height: 48px;    
     border-radius: 8px;
     text-align: center;
     color : var(--white);
     box-sizing: border-box;  
     display: inline-block;  
-}
-.button-font{   
+
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+
+    cursor: default;
 }
+.button_full-width {
+    width: 100%; 
+}
+
 .button:hover{
     cursor: pointer;
 }
-
-.button:active{
-    cursor: default;
+.button[disabled]{
+    opacity: 0.5;  
+    cursor: not-allowed;  
+    pointer-events: none;
 }
-.button:disabled{
-    opacity: 0.5;    
-    cursor: not-allowed;
-}
-.button-primary{
+.button_primary{
     background-color: var(--blue-2);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
-.button-secondary{
+.button_secondary{
     background-color: var(--purple);    
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
-.button-alternate{   
+.button_alternate{   
     border: 1px solid var(--grey-3);
     background-color: var(--white);
     color: var(--grey-4); 
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
-.button-primaryHovered, .button-primary:hover{
+.button_primary:hover{
     background-color: var(--blue-3);  
 }
-.button-secondaryHovered, .button-secondary:hover{
+.button_secondary:hover{
     background-color: var(--purple-2);  
 }
-.button-alternateHovered, .button-alternate:hover{
+.button_alternate:hover{
     border-color: var(--black);   
 }
 /*for display*/
