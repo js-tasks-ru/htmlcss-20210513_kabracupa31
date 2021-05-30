@@ -1,1 +1,74 @@
 /* Стилизация кнопки */
+/*цвета будут тянуться из main после слияния*/
+:root {
+   
+    --blue-2: #4263EB;
+    --blue-3: #2342C0;
+    --purple-2: #5028C6;
+    ;
+}
+/* Стилизация кнопки */
+.button{
+    height: 48px;    
+    border-radius: 8px;
+    text-align: center;
+    color: var(--white);
+    box-sizing: border-box;  
+    display: inline-block;  
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    cursor: pointer;
+}
+.button_full-width {
+    width: 100%; 
+}
+.button[disabled]{
+    opacity: 0.5;    
+    pointer-events: none;
+}
+.button_primary{
+    background-color: var(--blue-2);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button_secondary{
+    background-color: var(--purple);    
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button_alternate{   
+    border: 1px solid var(--grey-3);
+    background-color: var(--white);
+    color: var(--grey-4); 
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button_primary:hover{
+    background-color: var(--blue-3);  
+}
+.button_secondary:hover{
+    background-color: var(--purple-2);  
+}
+.button_alternate:hover{
+    border-color: var(--black);   
+}
+/*for display*/
+.button-list{   
+    display: inline-block;
+    columns: 3 auto;  
+    column-gap: 0px;   
+}
+.button-list__button{
+    width: 189px;
+    height: 48px;
+    padding: 0;
+    margin:0;
+}
+.button-list__button:not(.button-list_alternate){
+    padding-right: 33px;
+}
+.button-list__button:not(.button-list_disabled){
+    padding-bottom: 16px;
+}
