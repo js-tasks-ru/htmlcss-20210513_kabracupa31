@@ -1,9 +1,4 @@
 /* Стилизация аккордеона */
-body{
-    margin: 0;
-    padding: 0;
-}
-
 .accordion{
     width: 100%;
 }
