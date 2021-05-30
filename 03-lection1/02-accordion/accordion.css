@@ -27,7 +27,7 @@ body{
     display: block;   
     cursor: pointer;
 }
-.accordion__summary_content{
+.accordion__summary-content{
     margin:  0;
 }
 .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
