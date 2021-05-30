@@ -11,7 +11,14 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
-
+    /**/
+    --blue-2: #4263EB;
+    --blue-3: #2342C0;
+    --purple-2: #5028C6;
+    --grey-5: #F9FAFC;
+    /*from Ui-KIT for start page*/
+    --grey-6: #C4C4C4;
+    /**/
     --error: var(--red);
     --success: var(--blue);
 
