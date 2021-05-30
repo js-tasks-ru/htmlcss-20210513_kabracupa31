@@ -52,7 +52,7 @@
 }
 .calendar__day_selected-ends{
     color: var(--white);
-    background: var(--blue-3);
+    background: var(--blue-2);
 }
 .calendar__day_selected{ 
     background: var(--blue-4-alfa20);
