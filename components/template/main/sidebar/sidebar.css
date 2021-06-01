@@ -1,0 +1,7 @@
+.sidebar{
+    max-width: 229px;
+    background-color: darkorange;
+}
+.sidebar__wrapper{
+    width: 229px;  
+}
