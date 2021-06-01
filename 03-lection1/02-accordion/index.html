@@ -4,15 +4,34 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
+        <link rel="stylesheet" href="../../assets/css/_tipography.css">       
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
+        <section class="accordion">            
+            <details open class="accordion__item">
+                <summary class="accordion__summary">
+                    <p class="accordion__summary-content">За столом сидели</p>
+                </summary>
+                <p class="accordion__text">
+                    За столом сидели мужики и ели Мясом конюх угощал своих гостей Все расхваливали ужин, и хозяин весел был О жене своей всё время говорил...
+                </p>            
+            </details>            
+            <details class="accordion__item">
+                <summary class="accordion__summary">
+                    <p class="accordion__summary-content">У тебя на полке</p>
+                </summary>     
+                <p class="accordion__text">
+                    У тебя на полке - Плюшевый мишка и заяц в футболке. Ты давно когда-то Ранним утром их нашла под ёлкой. А за старым шкафом - Портфель без ручки и летняя шляпа. Кто-то хитрый и большой Наблюдает за тобой.
+                </p>      
+            </details>                  
+            <details class="accordion__item">
+                <summary class="accordion__summary">
+                    <p class="accordion__summary-content">Просто я живу на улице Ленина</p>
+                </summary>     
+                <p class="accordion__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>      
+            </details>                
+        </section>         
     </body>
 </html>
