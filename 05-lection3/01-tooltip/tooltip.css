@@ -1,29 +1,20 @@
-.wrapper{
-    width: 189px;
-    margin: 100px auto 100px;
-}
 .tooltip{
     text-align: center;
-    width:24px;
-    height: 24px;  
     position: relative;
 }
-
 .tooltip__icon{
     width: 24px;
     height: 24px;
 
-    position: absolute;
-    left: 0;/*calc(50% - 12px);*/
-    top: 0; 
     color: var(--black); 
+    cursor: pointer;
   }
 .tooltip__text{
     width: 189px;
-    position: relative;
-    left: -82.5px;/*calc(-100% + 12px);*/
-    top: -57px;
-   
+    position:absolute;
+    top: -200%;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index:1;
 
     padding: 13px 5px 8px 5px;
@@ -50,9 +41,6 @@
     border: 6px solid var(--blue-2);
     transform: rotate(45deg);
 }
-.tooltip:hover .tooltip__text{
-    display:block;
-}
-.tooltip__text_visible{
+.tooltip__icon:hover ~ .tooltip__text{
     display:block;
 }
