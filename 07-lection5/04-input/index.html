@@ -5,7 +5,33 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
     </head>
-    <body>
+    <body style="width: 350px">
+        <div class="custom-input">
+            <label for="custom-input__input" class="custom-input__label">LABEL</label>
+            <input type="text" id="custom-input__input" name="name" class="custom-input__input"  placeholder="Placeholder">
+        </div>
+        <div class="custom-input">
+            <label for="custom-input__input" class="custom-input__label">FOCUS</label>
+            <input type="text" id="custom-input__input" name="name" class="custom-input__input" value="Filled Input" placeholder="Placeholder">
+        </div>
+        <div class="custom-input">
+            <label for="custom-input__input" class="custom-input__label">SUCCESS</label>
+            <input type="text" id="custom-input__input" name="name" class="custom-input__input" value="Success" placeholder="Placeholder">
+            <svg class="custom-input__icon custom-input__icon_blue">            
+                <use xlink:href="../../assets/images/sprite.svg#icon-success"/>
+            </svg>
+        </div>
+        <div class="custom-input">
+            <label for="custom-input__input" class="custom-input__label">error</label>
+            <input type="text" id="custom-input__input" name="name" class="custom-input__input custom-input__input_invalid" value="Error" placeholder="Placeholder">
+            <svg class="custom-input__icon custom-input__icon_red">            
+                <use xlink:href="../../assets/images/sprite.svg#icon-error"/>
+            </svg>
+        </div>
+        <div class="custom-input">
+            <label for="custom-input__input" class="custom-input__label">disabled</label>
+            <input type="text" id="custom-input__input" name="name" class="custom-input__input" value="Disabled" placeholder="Placeholder" disabled>
+        </div>
 
     </body>
 </html>
