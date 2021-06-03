@@ -1,0 +1,71 @@
+
+.card{
+    height: 100%;
+    
+    display: grid;
+    grid-template-rows: 1fr 1px 46px;
+    
+    align-items: center;
+
+    overflow: hidden;
+}
+.card_justify-center{
+    justify-items: center;
+}
+.card_justify-stretch{
+    justify-items: stretch;
+}
+.card_large-padding{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card__line{
+    height: 1px;
+    width: 100%;
+    background:var(--grey-2);
+}
+.card__title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+}
+.card__type{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    
+    margin: 6px 0 7px 0;
+
+    text-align: center;
+    color: var(--grey-4);
+
+    display: none;
+  
+}
+@media screen and (min-width: 768px){
+    .card{
+        grid-template-rows: 1fr 1px 100px;
+        padding: 25px;
+    }
+    /*календарь на паддинге 25 отображается плохо*/
+    .card_large-padding{
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    .card__line{
+        background:var(--white);
+    }
+    .card__title{
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .card__type{
+       display: block;
+    }
+}

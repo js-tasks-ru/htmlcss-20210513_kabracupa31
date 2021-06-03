@@ -1,3 +1,6 @@
+.nav{
+    display:none;
+} 
 .nav__item{
     font-size: 16px;
     line-height: 24px;
@@ -8,4 +11,10 @@
 }
 .nav__item_active {
     color: var(--black);   
+}
+@media screen and (min-width: 768px)
+{
+    .nav{
+       display: block;
+    }         
 }
