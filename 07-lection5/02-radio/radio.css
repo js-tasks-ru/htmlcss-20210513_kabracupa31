@@ -1,0 +1,81 @@
+    .radio__input{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        
+        outline: none;
+        pointer-events: none;
+    
+        position: absolute;
+        z-index: -1;
+    }
+    .radio__state{
+        display: flex;
+        align-items: center;
+    
+        cursor: pointer;
+    }
+    .radio__control{
+        width: 28px;
+        height: 28px;
+        background: var(--white);
+    
+        border: 1px solid var(--grey-2);
+        box-sizing: border-box;
+        border-radius: 14px;
+    
+        position: relative;
+    }
+    .radio__text{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--grey-4);
+    
+        margin-left: 12px;
+    }    
+    .radio__icon{
+        display: none;
+    
+        width: 18px;
+        height: 18px;
+
+        background: var(--blue);
+        border-radius: 14px;
+      
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .radio__text::before {
+        content: "Default";
+    }
+    .radio__input:checked ~ .radio__state .radio__control {
+        border-color: var(--blue);
+    }
+    .radio__input:checked ~ .radio__state .radio__icon {
+        display: block;
+    }
+    .radio__input:checked ~ .radio__state .radio__text::before {
+        content: ""; 
+    }
+    .radio__input:checked ~ .radio__state .radio__text::after {
+        content: "Selected"; 
+    }
+    .radio__input[disabled] ~ .radio__state .radio__text::before {
+        content: ""; 
+    }
+    .radio__input[disabled] ~ .radio__state .radio__control{
+        background: var(--grey-2);
+        pointer-events: none;
+    }
+    .radio__input[disabled] ~ .radio__state .radio__text{
+        color: var(--grey-2);
+    }
+    .radio__input:focus-within ~ .radio__state .radio__text{
+        text-decoration-line: underline;
+    }
+    

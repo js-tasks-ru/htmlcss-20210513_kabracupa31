@@ -1,0 +1,85 @@
+
+    .toggler__input{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        
+        outline: none;
+        pointer-events: none;
+    
+        position: absolute;
+        z-index: -1;
+    }
+    .toggler__state{
+        display: flex;
+        align-items: center;
+    
+        cursor: pointer;
+    }
+    .toggler__control{
+        width: 52px;
+        height: 28px;
+        background: var(--white);
+    
+        border: 1px solid var(--grey-2);
+        box-sizing: border-box;
+        border-radius: 14px;
+    
+        position: relative;
+    }
+    .toggler__text{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--grey-4);
+    
+        margin-left: 12px;
+    }    
+    .toggler__icon{
+        width: 24px;
+        height: 24px;
+
+        background-color: var(--grey-2);
+        border-radius: 14px;
+      
+        position: absolute;
+        left: 2px;
+        top: 50%;
+        transform: translate(0,-50%);
+        
+    }
+    .toggler__text::before {
+        content: "Off";
+    }
+    .toggler__input:checked ~ .toggler__state .toggler__control {
+        background-color: var(--blue);
+    }
+    .toggler__input:checked ~ .toggler__state .toggler__icon {
+        background-color: var(--white);
+        transform: translate(calc(100% - 2px), -50%);
+    }
+    .toggler__input:checked ~ .toggler__state .toggler__text::before {
+        content: ""; 
+    }
+    .toggler__input:checked ~ .toggler__state .toggler__text::after {
+        content: "On"; 
+    }
+    .toggler__input[disabled] ~ .toggler__state .toggler__text::before {
+        content: ""; 
+    }
+    .toggler__input[disabled] ~ .toggler__state .toggler__control{
+        background-color: var(--grey-2);
+        pointer-events: none;
+    }
+    .toggler__input[disabled] ~ .toggler__state .toggler__icon{
+        background-color: var(--grey-3);
+    }
+    .toggler__input[disabled] ~ .toggler__state .toggler__text{
+        color: var(--grey-2);
+    }
+    .toggler__input:focus-within ~ .toggler__state .toggler__text{
+        text-decoration-line: underline;
+    }
+    

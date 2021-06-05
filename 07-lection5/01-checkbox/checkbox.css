@@ -1,0 +1,80 @@
+.checkbox__input{
+    /*visibility: hidden;*/ /*тестилась на хроме 90.0.4430.212 не срабатывает событие focused и табуляция с этим свойством*/
+
+    width: 0;
+    height: 0;
+    opacity: 0;
+    
+    outline: none;
+    pointer-events: none;
+
+    position: absolute;
+    z-index: -1;
+}
+.checkbox__state{
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+.checkbox__control{
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    position: relative;
+}
+.checkbox__text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+
+    margin-left: 12px;
+}
+.checkbox__icon{
+    display: none;
+
+    width: 15px;
+    height: 12px;
+    color: var(--white);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.checkbox__text::before {
+    content: "Default";
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+    background: var(--blue-2);
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox__icon {
+    display: block;
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox__text::before {
+    content: ""; 
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox__text::after {
+    content: "Checked"; 
+}
+.checkbox__input[disabled] ~ .checkbox__state .checkbox__text::before {
+    content: ""; 
+}
+.checkbox__input[disabled] ~ .checkbox__state .checkbox__control{
+    background: var(--grey-2);
+    pointer-events: none;
+}
+.checkbox__input[disabled] ~ .checkbox__state .checkbox__text{
+    color: var(--grey-2);
+}
+.checkbox__input:focus-within ~ .checkbox__state .checkbox__text{
+    text-decoration-line: underline;
+}
