@@ -9,7 +9,6 @@
     
      /*flex-basis: 164px;*/
      width: calc(50% - 30px);
-     height: 210px;
      margin: 15px;
  
      background: var(--white);
@@ -25,6 +24,5 @@
      .preview__card{ 
         /*flex-basis: 350px;*/
         width: calc(33.3% - 30px);
-         height: 367px;
      }
  }

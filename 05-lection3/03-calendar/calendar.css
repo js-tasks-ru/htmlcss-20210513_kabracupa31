@@ -1,8 +1,5 @@
-:root{
-   
-}
+
 .calendar{
-    /*height: 324px;*/
     max-width: 304px;
     box-sizing: border-box;
     background: var(--white);
@@ -11,11 +8,8 @@
 }
 .calendar__caption{
     text-align: center;
-    font-family: Inter;
-    font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;   
+    color: var(--grey-8);
 }
 .calendar__wrapper{
     position: relative;
@@ -33,10 +27,6 @@
 
 .calendar__day{
     font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 8px;
-    line-height: 10px;
     color: var(--grey-8);
     
     display: flex;
@@ -44,7 +34,6 @@
     justify-content: center;   
 }
 .calendar__day-caption{
-    font-size: 7px;
     color: var(--grey-7);
     align-items: flex-end;
 }
@@ -60,16 +49,5 @@
         border: 1px solid var(--grey-3);
         border-radius: 8px;
         padding: 28px; 
-    }
-    .calendar__caption{
-        font-size: 20px;
-        line-height: 24px; 
-    }
-    .calendar__day{
-        font-size: 16px;
-        line-height: 20px;  
-    }
-    .calendar__day-caption{
-        font-size: 14px;
     }
 }

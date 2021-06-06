@@ -1,7 +1,26 @@
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    margin-top: 25px;
+    margin-top: 17px;
+    position: relative;
+}
+.header__menu{
+    width: 20px;
+    height: 20px;
+    
+    position: absolute;
+    left: 3px;
+    top: 6px;
+}
+@media screen and (min-width: 768px){
+    .header__menu{
+        display: none;
+    }
+    .header{
+        justify-content: space-between;
+        
+        margin-top: 25px;
+    }
 }

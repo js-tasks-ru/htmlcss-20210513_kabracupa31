@@ -12,12 +12,6 @@
 .header__title{
     margin: 49px auto 0;
     color: var(--black);
-    font-family: Inter;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 38px;
 }
 .header__menu{
     width: 20px;
@@ -43,9 +37,5 @@
     .header__container{
         justify-content: space-between;
         position: static;
-    }     
-    .header__title{
-        font-size: 50px;
-        line-height: 64px;
-    }    
+    }        
 }

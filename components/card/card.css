@@ -3,9 +3,10 @@
     height: 100%;
     
     display: grid;
-    grid-template-rows: 1fr 1px 46px;
+    grid-template-rows: 1fr 1px auto;
     
     align-items: center;
+    align-content: space-between;
 
     overflow: hidden;
 }
@@ -25,22 +26,19 @@
     background:var(--grey-2);
 }
 .card__title{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
     text-align: center;
+    
+    font-weight: 500;
     color: var(--black);
+
+    padding: 13px 0 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card__type{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    
-    margin: 6px 0 7px 0;
+    margin-top: 6px;
 
     text-align: center;
     color: var(--grey-4);
@@ -50,10 +48,9 @@
 }
 @media screen and (min-width: 768px){
     .card{
-        grid-template-rows: 1fr 1px 100px;
-        padding: 25px;
+        padding: 32px 25px;
     }
-    /*календарь на паддинге 25 отображается плохо*/
+    
     .card_large-padding{
         padding-left: 74px;
         padding-right: 74px;
@@ -62,8 +59,7 @@
         background:var(--white);
     }
     .card__title{
-        font-size: 24px;
-        line-height: 25px;
+        padding: 25px 0 0;   
     }
     .card__type{
        display: block;
