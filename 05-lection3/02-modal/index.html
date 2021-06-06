@@ -3,10 +3,37 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../assets/css/_typography.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
+        <style>
+            body{
+                display: flex;            
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
     </head>
     <body>
+        <button type="button" class="button button_primary" id="modal-open" style="flex-basis:189px">Open modal</button>
+        <div class="modal" id="modal">
+            <form class="modal__content">
+                <svg class="modal__icon" id="modal-close">            
+                    <use xlink:href="../../assets/images/sprite.svg#icon-close"/>
+                </svg>
+                <div class="modal__header">
+                    Modal title
+                </div>
+                <div class="modal__body">
+                    <!--здесь дб инпуты после аппрува-->
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="modal__submit button button_primary button_full-width">Submit</button>
+                </div>
+            </form>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
