@@ -61,9 +61,6 @@
         transform: translate(calc(100% - 2px), -50%);
     }
     .toggler__input:checked ~ .toggler__state .toggler__text::before {
-        content: ""; 
-    }
-    .toggler__input:checked ~ .toggler__state .toggler__text::after {
         content: "On"; 
     }
     .toggler__input[disabled] ~ .toggler__state .toggler__text::before {

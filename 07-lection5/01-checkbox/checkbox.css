@@ -60,9 +60,6 @@
     display: block;
 }
 .checkbox__input:checked ~ .checkbox__state .checkbox__text::before {
-    content: ""; 
-}
-.checkbox__input:checked ~ .checkbox__state .checkbox__text::after {
     content: "Checked"; 
 }
 .checkbox__input[disabled] ~ .checkbox__state .checkbox__text::before {

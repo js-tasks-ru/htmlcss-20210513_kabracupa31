@@ -60,9 +60,6 @@
         display: block;
     }
     .radio__input:checked ~ .radio__state .radio__text::before {
-        content: ""; 
-    }
-    .radio__input:checked ~ .radio__state .radio__text::after {
         content: "Selected"; 
     }
     .radio__input[disabled] ~ .radio__state .radio__text::before {
