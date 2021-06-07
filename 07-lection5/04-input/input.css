@@ -1,6 +1,6 @@
 .custom-input{
     position: relative;
-    display: block;
+    display: inline-block;
 }
 .custom-input__label{
     text-transform: uppercase;
@@ -26,7 +26,6 @@
     background-color: var(--white);
 }
 .custom-input__icon-error, .custom-input__icon-success{
-    
     display: none;
   
     width: 24px;
@@ -58,6 +57,7 @@
     line-height: 26px;
 
     padding-left: 24px;
+    padding-right: 44px;
 
     color: var(--grey-4);
 }
