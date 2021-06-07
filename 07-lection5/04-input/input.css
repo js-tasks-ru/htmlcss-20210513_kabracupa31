@@ -2,6 +2,9 @@
     position: relative;
     display: inline-block;
 }
+.custom-input_full-width{
+    width: 100%;
+}
 .custom-input__label{
     text-transform: uppercase;
     color: var(--grey-3);
