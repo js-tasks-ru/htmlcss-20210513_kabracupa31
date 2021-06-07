@@ -2,6 +2,9 @@
     padding: 17px 16px 69px;
     background-color: var(--white);
 }
+.header_background-template{
+    background: var(--grey-9);
+}
 .header__container{
     display: flex;
     justify-content: center;
@@ -13,7 +16,7 @@
     margin: 49px auto 0;
     color: var(--black);
 }
-.header__menu{
+.header__menu-trigger{
     width: 20px;
     height: 20px;
     
@@ -25,7 +28,7 @@
     .header{
         padding: 25px 0 77px;
     }
-    .header__menu{
+    .header__menu-trigger{
         display: none;
     }
     .header__logo{

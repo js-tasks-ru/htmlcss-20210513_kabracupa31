@@ -6,8 +6,7 @@ html, body{
     background-color: var(--grey-5);
 }
 .page__box{
-    
-    max-width: 375px;
+    padding 0 15px;
     margin: 0 auto;
 }
 @media screen and (min-width: 768px){

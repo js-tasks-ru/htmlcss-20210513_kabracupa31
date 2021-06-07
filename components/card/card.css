@@ -56,7 +56,8 @@
         padding-right: 74px;
     }
     .card__line{
-        background:var(--white);
+        visibility: hidden;
+        /*background:var(--white);*/
     }
     .card__title{
         padding: 25px 0 0;   
