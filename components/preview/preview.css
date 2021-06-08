@@ -1,13 +1,13 @@
 .preview{
     display:flex;
-    padding: 22px 0 133px;   /*68 204 */
+    padding: 22px 0 133px;  
     
     flex-wrap: wrap;  
-    justify-content: center;  
+    /*justify-content: center;*/  
+    justify-content: flex-start;
+    /*grid-auto-rows: 1fr;*//*для одинаковой высоты рядов нужно переделать на грид или задать фикс высоту на preview__card*/
 }
 .preview__card{    
-    
-     /*flex-basis: 164px;*/
      width: calc(50% - 30px);
      margin: 15px;
  
@@ -22,7 +22,6 @@
         margin: 0 -15px;
     }
      .preview__card{ 
-        /*flex-basis: 350px;*/
         width: calc(33.3% - 30px);
      }
  }
