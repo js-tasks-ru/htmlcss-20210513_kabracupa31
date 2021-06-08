@@ -2,10 +2,18 @@
 <!-- Страница с тултипом -->
 <html lang="ru">
     <head>
+        <style>body {margin: 100px auto 100px;}</style>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./tooltip.css">
     </head>
     <body>
-
+        <div class="tooltip">                
+            <svg class="tooltip__icon">            
+                <use xlink:href="../../assets/images/sprite.svg#icon-help"/>
+            </svg>
+            <span class="tooltip__text">
+                Helper Text
+            </span> 
+        </div>
     </body>
 </html>
