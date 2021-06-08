@@ -1,5 +1,6 @@
 @import "./page/page.css";
-@import "./header/header.css";
+@import "../header/header.css";
+@import "./nav/nav.css";
 @import "./main/main.css";
 @import "./main/sidebar/sidebar.css";
 @import "./main/features/features.css";

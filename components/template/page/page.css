@@ -1,5 +1,5 @@
 .page{
-    background: #E5E5E5;
+    background: var(--grey-9);
 }
 .page__inner{
     display: grid;

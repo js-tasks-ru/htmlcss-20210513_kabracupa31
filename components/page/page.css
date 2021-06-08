@@ -2,11 +2,15 @@ html, body{
     margin: 0;
     padding:0;
 }
+.page{
+    background-color: var(--grey-5);
+}
 .page__box{
-    max-width: 1110px;
+    padding 0 15px;
     margin: 0 auto;
 }
-.page__main{
-    height: 1036px;
-    background-color: var(--grey-5);
+@media screen and (min-width: 768px){
+    .page__box{
+        max-width: 1110px;
+     }
 }

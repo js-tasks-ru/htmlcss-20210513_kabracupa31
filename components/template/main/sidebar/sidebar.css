@@ -1,7 +1,13 @@
 .sidebar{
-    max-width: 229px;
-    background-color: darkorange;
+    display: none;
 }
-.sidebar__wrapper{
-    width: 229px;  
+@media screen and (min-width: 768px){
+    .sidebar{
+        display: block;
+        max-width: 229px;
+        background-color: darkorange;
+    }
+    .sidebar__wrapper{
+        width: 229px;  
+    }
 }
