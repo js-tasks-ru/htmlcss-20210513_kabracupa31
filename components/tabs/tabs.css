@@ -14,22 +14,22 @@
 .tabs__content_templates{
    display: none;
 }
-#all-tab:checked ~ .preview .tabs__content_elements{
+#all-tab:checked ~ .tabs__content .tabs__content_elements{
     display: block;
 }
-#all-tab:checked ~ .preview .tabs__content_containers{
+#all-tab:checked ~ .tabs__content .tabs__content_containers{
     display: block;
 }
-#all-tab:checked ~ .preview .tabs__content_templates{
+#all-tab:checked ~ .tabs__content.tabs__content_templates{
     display: block;
 }
-#containers-tab:checked ~ .preview .tabs__content_containers{
+#containers-tab:checked ~ .tabs__content .tabs__content_containers{
     display: block;
 }
-#templates-tab:checked ~ .preview .tabs__content_templates{
+#templates-tab:checked ~ .tabs__content .tabs__content_templates{
     display: block;
 }
-#elements-tab:checked ~ .preview .tabs__content_elements{
+#elements-tab:checked ~ .tabs__content .tabs__content_elements{
     display: block;
 }
 .tabs__scroller{
@@ -42,23 +42,23 @@
     color: var(--grey-3);
     background: var(--white);
 }
-.tabs__scroller > label{
+.tabs__scroller-label{
     border-bottom: solid 5px var(--white);  
     padding-bottom: 8px;
 }
-#all-tab:checked ~ .tabs__scroller > label[for="all-tab"]{
+#all-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="all-tab"]{
     border-bottom-color: var(--black);
     color: var(--black);
 }
-#elements-tab:checked ~ .tabs__scroller > label[for="elements-tab"]{
+#elements-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="elements-tab"]{
     border-bottom: solid 5px var(--black);
     color: var(--black);
 }
-#containers-tab:checked ~ .tabs__scroller > label[for="containers-tab"]{
+#containers-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="containers-tab"]{
     border-bottom-color: var(--black);
     color: var(--black);
 }
-#templates-tab:checked ~ .tabs__scroller > label[for="templates-tab"]{
+#templates-tab:checked ~ .tabs__scroller .tabs__scroller-label[for="templates-tab"]{
     border-bottom-color: var(--black);
     color: var(--black);
 }
