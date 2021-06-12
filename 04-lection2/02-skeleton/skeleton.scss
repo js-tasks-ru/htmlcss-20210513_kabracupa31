@@ -8,6 +8,7 @@
     #dde2e5 102.52%
   );
   animation: gradient $time infinite linear;
+  animation-fill-mode: forwards;
 }
 .skeleton {
   padding: 24px;
@@ -71,9 +72,9 @@
 }
 @keyframes gradient {
   0% {
-    background-position-x: -250px;
+    background-position-x: -100%;
   }
   100% {
-    background-position-x: 0;
+    background-position-x: 100%;
   }
 }
