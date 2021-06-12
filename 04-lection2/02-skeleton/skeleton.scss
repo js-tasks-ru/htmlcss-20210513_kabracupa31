@@ -7,7 +7,11 @@
     #e3e7ea 77.5%,
     #dde2e5 102.52%
   );
-  animation: gradient $time infinite linear;
+  //animation: gradient $time infinite linear;
+  animation-name: gradient;
+  animation-duration: $time;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 .skeleton {
