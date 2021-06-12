@@ -1,0 +1,72 @@
+/* Стилизация кнопки */
+.button {
+  height: 48px;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--white);
+  box-sizing: border-box;
+  display: inline-block;
+
+  cursor: pointer;
+  &_full-width {
+    width: 100%;
+  }
+  &__text {
+    font-family: Roboto;
+  }
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  $button-names: primary, secondary, alternated;
+
+  @each $button-name in $button-names {
+    &_#{$button-name} {
+      transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    }
+  }
+
+  &_primary {
+    background-color: var(--primary);
+  }
+  &_secondary {
+    background-color: var(--secondary);
+  }
+  &_alternated {
+    border: 1px solid var(--grey-3);
+    background-color: var(--bg-white);
+    color: var(--grey-4);
+  }
+  &_primary:hover {
+    background-color: var(--blue-3);
+  }
+  &_secondary:hover {
+    background-color: var(--purple-2);
+  }
+  &_alternated:hover {
+    border-color: var(--color-main);
+  }
+}
+
+/*for display*/
+.button-list {
+  display: flex;
+
+  gap: 5px;
+  padding: 0 5px;
+  flex-wrap: wrap;
+  &__button {
+    flex-grow: 1;
+    flex-basis: 100%;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(50% - 10px);
+    }
+  }
+  &__button_disabled {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+}

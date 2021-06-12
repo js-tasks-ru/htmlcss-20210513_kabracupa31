@@ -1,0 +1,78 @@
+.tabs {
+  &__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    outline: none;
+    pointer-events: none;
+
+    position: absolute;
+    z-index: -1;
+  }
+  &__content_containers,
+  &__content_elements,
+  &__content_templates,
+  &__content_css,
+  &__content_html {
+    display: none;
+  }
+  &__scroller {
+    background: var(--bg-white);
+  }
+  &__scroller-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+
+    padding-left: 5px;
+
+    color: var(--color-secondary);
+
+    @media screen and (min-width: 768px) {
+      gap: 40px;
+      padding-left: 0;
+    }
+  }
+  &__scroller_padding-left-42 {
+    padding-left: 16px;
+    @media screen and (min-width: 768px) {
+      padding-left: 48px;
+    }
+  }
+  &__scroller-label {
+    border-bottom: solid 5px var(--bg-white);
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__content {
+      color: var(--color-main);
+    }
+  }
+}
+$tab-names: elements, containers, templates, html, css;
+
+@each $tab-name in $tab-names {
+  #all-tab:checked ~ .tabs__content .tabs__content_#{$tab-name} {
+    display: block;
+  }
+  ##{$tab-name}-tab:checked ~ .tabs__content .tabs__content_#{$tab-name} {
+    display: block;
+  }
+  ##{$tab-name}-tab:checked
+    ~ .tabs__scroller
+    .tabs__scroller-label[for='#{$tab-name}-tab'] {
+    border-bottom: solid 5px var(--color-main);
+    color: var(--color-main);
+  }
+}
+#all-tab:checked ~ .tabs__scroller .tabs__scroller-label[for='all-tab'] {
+  border-bottom-color: var(--color-main);
+  color: var(--color-main);
+}

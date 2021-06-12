@@ -1,0 +1,36 @@
+.footer {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    padding: 72px 0 136px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+
+    &_template {
+      padding: 0 0 56px;
+      background-color: var(--bg-secondary);
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__title {
+      text-align: center;
+      color: var(--color-main);
+      margin: 0 auto 32px;
+    }
+    &__title_template {
+      margin: 0;
+      text-transform: uppercase;
+      color: var(--color-secondary);
+    }
+    &__content {
+      text-align: center;
+      color: var(--color-main);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+  }
+}

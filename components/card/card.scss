@@ -1,0 +1,53 @@
+.card {
+  height: 100%;
+  padding: 24px 0;
+  display: grid;
+  grid-template-rows: 1fr 1px auto;
+
+  align-items: center;
+  align-content: space-between;
+  gap: 12px;
+
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 25px;
+  }
+
+  &_justify-center {
+    justify-items: center;
+  }
+  &_justify-stretch {
+    justify-items: stretch;
+  }
+  &__content_tooltip-padding {
+    padding: 67.5px 0 22.5px; /*увеличено на высоту абсолюта*/
+  }
+  &__line {
+    height: 1px;
+    width: 100%;
+    background: var(--grey-2);
+
+    @media screen and (min-width: 768px) {
+      visibility: hidden;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-main);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__type {
+    margin-top: 6px;
+    text-align: center;
+    color: var(--color-grey-4);
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}

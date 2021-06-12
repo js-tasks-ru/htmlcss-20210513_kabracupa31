@@ -1,0 +1,57 @@
+.header {
+  padding: 17px 16px 17px;
+  background-color: var(--bg-white);
+
+  @media screen and (min-width: 768px) {
+    padding: 24px 0 32px;
+  }
+  &_background-template {
+    background: var(--bg-main);
+    @media screen and (min-width: 768px) {
+      background: var(--bg-secondary);
+    }
+  }
+  &_padding-template {
+    padding: 17px 0;
+    @media screen and (min-width: 768px) {
+      padding: 24px 0 0;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+      position: static;
+    }
+  }
+  &__title {
+    margin: 49px auto 0;
+    color: var(--color-main);
+    @media screen and (min-width: 768px) {
+      margin: 41px auto 0;
+    }
+  }
+  &__logo {
+    padding-left: 5px;
+    color: var(--color-main);
+    @media screen and (min-width: 768px) {
+      padding-left: 0;
+    }
+  }
+  &__menu-trigger {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
