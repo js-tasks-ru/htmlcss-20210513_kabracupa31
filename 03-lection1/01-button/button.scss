@@ -8,6 +8,8 @@
   display: inline-block;
 
   cursor: pointer;
+  transition: all 200ms ease-in-out;
+
   &_full-width {
     width: 100%;
   }
@@ -18,15 +20,6 @@
     opacity: 0.5;
     pointer-events: none;
   }
-
-  $button-names: primary, secondary, alternated;
-
-  @each $button-name in $button-names {
-    &_#{$button-name} {
-      transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-    }
-  }
-
   &_primary {
     background-color: var(--primary);
   }
@@ -46,6 +39,9 @@
   }
   &_alternated:hover {
     border-color: var(--color-main);
+  }
+  &:active{
+     transform: translateY(2px);
   }
 }
 
