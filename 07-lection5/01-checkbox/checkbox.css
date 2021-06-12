@@ -27,7 +27,9 @@
     border-radius: 4px;
 
     position: relative;
+    
 }
+
 .checkbox__text{
     font-family: Inter;
     font-style: normal;
@@ -55,7 +57,19 @@
 }
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     background: var(--blue-2);
+    animation: control-box-shadow 300ms linear;
 }
+@keyframes control-box-shadow {
+    0% {
+        box-shadow: none;
+    }
+    99.9% {
+        box-shadow: 0px 0px 0px 25px hsla(0, 0%, 0%, 0.08); /* после слияния с темной темой здесь нужны константы */
+    }
+    100% {
+        box-shadow: none;
+    }
+  }
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
     display: block;
 }
