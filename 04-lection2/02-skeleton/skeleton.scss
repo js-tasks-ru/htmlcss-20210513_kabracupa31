@@ -7,6 +7,7 @@
     #e3e7ea 77.5%,
     #dde2e5 102.52%
   );
+  background-size: 200%;
   //animation: gradient $time infinite linear;
   animation-name: gradient;
   animation-duration: $time;
@@ -39,7 +40,7 @@
     width: 48px;
     border-radius: 50%;
 
-    @include skeleton_background-gradient(4s);
+    @include skeleton_background-gradient(2s);
 
     @media screen and (min-width: 768px) {
       height: 64px;
@@ -76,9 +77,9 @@
 }
 @keyframes gradient {
   0% {
-    background-position-x: -100%;
+    background-position-x: 100%;
   }
   100% {
-    background-position-x: 100%;
+    background-position-x: -100%;
   }
 }
