@@ -9,7 +9,7 @@ module.exports = {
     require('postcss-nested'),
     require('postcss-strip-inline-comments'),
     require('postcss-each'),
-    require('autoprefixer'), //,
-    // require('cssnano'),
+    require('autoprefixer'),
+    require('cssnano'),
   ],
 };

@@ -3,15 +3,24 @@
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+      body{
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+      
+        flex-wrap: wrap;
+      }
+    </style>
   </head>
   <body>
-    <section class="button-list">
-      <div class="button-list__button">
+    
+      
         <button type="button" class="button button_primary button_full-width">
           <p class="button__text">Primary</p>
         </button>
-      </div>
-      <div class="button-list__button button-list__button_disabled">
+      
         <button
           disabled
           type="button"
@@ -19,13 +28,11 @@
         >
           <p class="button__text">Primary</p>
         </button>
-      </div>
-      <div class="button-list__button">
+     
         <button type="button" class="button button_secondary button_full-width">
           <p class="button__text">Secondary</p>
         </button>
-      </div>
-      <div class="button-list__button button-list__button_disabled">
+      
         <button
           disabled
           type="button"
@@ -33,24 +40,22 @@
         >
           <p class="button__text">Secondary</p>
         </button>
-      </div>
-      <div class="button-list__button">
+      
         <button
           type="button"
           class="button button_alternated button_full-width"
         >
           <p class="button__text button__text_alternated">Alternate</p>
         </button>
-      </div>
-      <div class="button-list__button button-list__button_disabled">
+      
         <button
           disabled
           type="button"
           class="button button_alternated button_disabled button_full-width"
         >
-          <p class="button__text">Alternate</p>
+          <p class="button__text button__text_alternated">Alternate</p>
         </button>
-      </div>
-    </section>
+     
+   
   </body>
 </html>

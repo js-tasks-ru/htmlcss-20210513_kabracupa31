@@ -6,10 +6,10 @@
   justify-content: flex-start;
 
   overflow: hidden;
+  margin: 0 -15px;
 
   @media screen and (min-width: 768px) {
     padding: 53px 0 53px;
-    margin: 0 -15px;
   }
   &__card {
     width: calc(50% - 30px);

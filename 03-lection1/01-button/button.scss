@@ -48,18 +48,3 @@
   }
 }
 
-/*for display*/
-.button-list {
-  display: flex;
-
-  gap: 5px;
-  padding: 0 5px;
-  flex-wrap: wrap;
-  &__button {
-    flex-grow: 1;
-    flex-basis: 100%;
-  }
-  &__button_disabled {
-    display: none;
-  }
-}
