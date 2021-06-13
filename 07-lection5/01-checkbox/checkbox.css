@@ -1,6 +1,4 @@
 .checkbox__input{
-    /*visibility: hidden;*/ /*тестилась на хроме 90.0.4430.212 не срабатывает событие focused и табуляция с этим свойством*/
-
     width: 0;
     height: 0;
     opacity: 0;
