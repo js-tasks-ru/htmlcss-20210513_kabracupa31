@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.page {
+  background-color: var(--bg-main);
+  overflow: hidden;
+
+  &__box {
+    margin: 0 auto;
+    padding: 0 15px;
+    @media screen and (min-width: 768px) {
+      max-width: 1110px;
+      padding: 0;
+    }
+  }
+  
+}

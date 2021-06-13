@@ -1,21 +1,21 @@
-.tooltip{
-    text-align: center;
-    position: relative;
-}
-.tooltip__icon{
+.tooltip {
+  text-align: center;
+  position: relative;
+
+  &__icon {
     width: 24px;
     height: 24px;
 
-    color: var(--black); 
+    color: var(--color-main);
     cursor: pointer;
   }
-.tooltip__text{
-    width: 189px;
-    position:absolute;
+  &__text {
+    width: 120px;
+    position: absolute;
     top: -200%;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index:1;
+    z-index: 1;
 
     padding: 13px 5px 8px 5px;
     background: var(--blue-2);
@@ -29,10 +29,10 @@
     font-size: 16px;
     line-height: 24px;
 
-    display:none;
-}
-.tooltip__text::after {
-    content: " ";
+    display: none;
+  }
+  &__text::after {
+    content: ' ';
     position: absolute;
     top: 100%;
     left: 50%;
@@ -40,7 +40,11 @@
     margin-top: -6px;
     border: 6px solid var(--blue-2);
     transform: rotate(45deg);
-}
-.tooltip__icon:hover ~ .tooltip__text{
-    display:block;
+  }
+  &__icon:hover ~ &__text {
+    display: block;
+  }
+  &_always-visible &__text {
+    display: block;
+  }
 }

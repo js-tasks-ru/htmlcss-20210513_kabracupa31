@@ -1,0 +1,85 @@
+@mixin skeleton_background-gradient($time) {
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background-size: 200%;
+  //animation: gradient $time infinite linear;
+  animation-name: gradient;
+  animation-duration: $time;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.skeleton {
+  padding: 24px;
+
+  background-color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+  }
+
+  &__avatar {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+
+    @include skeleton_background-gradient(2s);
+
+    @media screen and (min-width: 768px) {
+      height: 64px;
+      width: 64px;
+    }
+  }
+
+  &__header-lines {
+    flex-grow: 1;
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &__line {
+    height: 20px;
+    @include skeleton_background-gradient(2s);
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__line + &__line {
+    margin-top: 8px;
+  }
+
+  &__header-line_shorter {
+    width: 60%;
+  }
+  &__header-line_short {
+    width: 80%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
