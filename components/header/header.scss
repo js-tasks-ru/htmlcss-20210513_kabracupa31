@@ -1,5 +1,5 @@
 .header {
-  padding: 17px 16px 17px;
+  padding: 16px 0 16px;
   background-color: var(--bg-white);
 
   @media screen and (min-width: 768px) {
@@ -30,10 +30,10 @@
     }
   }
   &__title {
-    margin: 49px auto 0;
+    margin-top: 49px;// auto 0;
     color: var(--color-main);
     @media screen and (min-width: 768px) {
-      margin: 41px auto 0;
+      margin-top: 41px;// auto 0;
     }
   }
   &__logo {
@@ -48,7 +48,7 @@
     height: 20px;
 
     position: absolute;
-    left: 3px;
+    left: 15px;
     top: 6px;
     @media screen and (min-width: 768px) {
       display: none;
