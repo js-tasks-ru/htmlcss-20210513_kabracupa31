@@ -3,9 +3,9 @@
   height: 48px;
   border-radius: 8px;
   text-align: center;
-  color: var(--white);
   box-sizing: border-box;
   display: inline-block;
+  border: none;
 
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -15,6 +15,10 @@
   }
   &__text {
     font-family: Roboto;
+    color: var(--white);
+  }
+  &__text_alternated {
+    color: var(--grey-4);
   }
   &[disabled] {
     opacity: 0.5;
@@ -29,7 +33,6 @@
   &_alternated {
     border: 1px solid var(--grey-3);
     background-color: var(--bg-white);
-    color: var(--grey-4);
   }
   &_primary:hover {
     background-color: var(--blue-3);
