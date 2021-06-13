@@ -1,42 +1,164 @@
 <html lang="ru">
-    <meta charset="UTF-8">
-    <head>
-        <link rel="stylesheet" href="./assets/css/_normalize.css">
-        <link rel="stylesheet" href="../assets/css/_tipography.css">
-        <link rel="stylesheet" href="../assets/css/main.css">        
-        <link rel="stylesheet" href="../components/template/template-page.css">       
-    </head>
-    <body>
-        <div class="page">
-            <div class="page__inner">
-                <div class="header">
-                    <div class="header__logo">
-                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="1" width="30" height="30" fill="#212429"/>
-                            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
-                        </svg>                       
-                    </div>    
-                </div>
-                <div class="main">
-                    <div class="sidebar">
-                        <div class="sidebar__wrapper">
+  <meta charset="UTF-8" />
+  <head>
+    <link rel="stylesheet" href="../assets/css/style.css" />
 
-                        </div>
-                    </div>
-                    <div class="features">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                    </div>    
+    <script
+      defer
+      src="../10-lection8/01-theme-changer/theme-changer.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page-template">
+      <div class="page-template__inner">
+        <div
+          class="
+            header
+            header__container
+            header_background-template
+            header_padding-template
+          "
+        >
+          <svg class="header__menu-trigger">
+            <use xlink:href="../assets/images/sprite.svg#menu-icon" />
+          </svg>
+          <div class="header__logo">
+            <svg
+              width="110"
+              height="32"
+              viewBox="0 0 110 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="1" width="30" height="30" fill="currentColor" />
+              <rect x="38" width="32" height="32" rx="16" fill="currentColor" />
+              <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="header__settings">
+            <nav class="nav">
+              <a href="" class="nav__item nav__item_active">Component</a>
+              <a href="" class="nav__item">About</a>
+              <a href="" class="nav__item">Contact</a>
+            </nav>
+            <div class="theme">
+              <svg class="theme__light">
+                <use xlink:href="../assets/images/sprite.svg#icon-sun" />
+              </svg>
+              <label class="theme__trigger toggler">
+                <input
+                  class="toggler__input"
+                  type="checkbox"
+                  id="theme-changer"
+                />
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <div class="toggler__icon"></div>
+                  </div>
+                  <div class="toggler__text"></div>
                 </div>
-                <div class="footer">
-                    <h5 class="footer__title">
-                        Reusable component library
-                    </h5>    
-                </div>
+              </label>
+              <svg class="theme__dark">
+                <use xlink:href="../assets/images/sprite.svg#icon-moon" />
+              </svg>
             </div>
+          </div>
         </div>
-    </body>
-    <footer>
-
-    </footer>
+        <div class="main-template">
+          <div class="sidebar">
+            <div class="sidebar__items">
+              <h4 class="sidebar__items-title">Elements</h4>
+              <div class="sidebar__items-list">
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./avatar.html"
+                    >Avatar</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./custom-form-elements.html"
+                    >Custom form elements</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./histogram.html"
+                    >Histogram</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./sceleton.html"
+                    >Sceleton</a
+                  ></small
+                >
+              </div>
+            </div>
+            <div class="sidebar__items">
+              <h4 class="sidebar__items-title">Containers</h4>
+              <div class="sidebar__items-list">
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./calendar.html"
+                    >Calendar</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./modal-dialog.html"
+                    >Modal dialog</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./tooltip.html"
+                    >Tooltip</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./accordion.html"
+                    >Accordion</a
+                  ></small
+                >
+              </div>
+            </div>
+            <div class="sidebar__items">
+              <h4 class="sidebar__items-title">Templates</h4>
+              <div class="sidebar__items-list"></div>
+            </div>
+          </div>
+          <div class="features">
+            <h3 class="features__header"></h3>
+            <div class="features__element"></div>
+            <div class="tabs features_aligment-stretch">
+              <input
+                class="tabs__input"
+                type="radio"
+                name="tab"
+                id="html-tab"
+                checked
+              />
+              <input class="tabs__input" type="radio" name="tab" id="css-tab" />
+              <div class="tabs__scroller tabs__scroller_padding-left-42">
+                <div class="tabs__scroller-inner">
+                  <label class="tabs__scroller-label" for="html-tab"
+                    >HTML</label
+                  >
+                  <label class="tabs__scroller-label" for="css-tab">CSS</label>
+                </div>
+              </div>
+              <div class="tabs__content features__code">
+                <div class="features__code_html tabs__content_html"></div>
+                <div class="features__code_css tabs__content_css"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_template">
+          <footer class="footer__container">
+            <h5 class="footer__title footer__title_template">
+              Reusable component library
+            </h5>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
 </html>
