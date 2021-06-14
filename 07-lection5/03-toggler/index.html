@@ -1,11 +1,49 @@
-<!DOCTYPE html>
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./toggler.css">
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 15px;
+                height: 300px;
+            }
+        </style>
     </head>
     <body>
 
+         <label class="toggler">
+            <input class="toggler__input" type="checkbox">
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon">            
+                    </div>
+                </div> 
+                <div class="toggler__text toggler__text_default"></div> 
+                </div> 
+        </label>
+        <label class="toggler">
+            <input class="toggler__input" type="checkbox" checked>
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <div class="toggler__icon">            
+                        </div>
+                    </div> 
+                <div class="toggler__text toggler__text_default"></div> 
+            </div> 
+        </label>
+        <label class="toggler">
+            <input class="toggler__input" type="checkbox" disabled>
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon">            
+                    </div>
+                </div> 
+                <div class="toggler__text">Disabled</div> 
+            </div> 
+        </label>
     </body>
 </html>

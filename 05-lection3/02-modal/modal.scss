@@ -1,0 +1,60 @@
+.modal{
+    display: none;
+    background: var(--grey-6-alfa-50);
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    align-items: center;
+    justify-content: center;
+
+    &_default-visible{
+        display: flex;    
+      }
+      &__content{
+        position: relative;
+        background: var(--bg-white);
+        border-radius: 8px;
+        padding: 30px 40px 33px 40px;
+        width: 428px;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 14px;
+      }
+      &__header{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+      
+        color: var(--color-calendar-8);
+      }
+      &__body{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      
+        color: var(--color-grey-4);
+      }
+      &__icon{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      
+        width: 16px;
+        height: 16px;
+        color: var(--color-grey-4);
+      
+        cursor: pointer;
+      }    
+  }
+  
