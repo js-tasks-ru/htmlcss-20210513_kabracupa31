@@ -35,7 +35,7 @@
               <rect x="38" width="32" height="32" rx="16" fill="currentColor" />
               <path d="M78 0L110 32H78V0Z" fill="currentColor" />
             </svg>
-          </a>
+            </a>
           </div>
           <div class="header__settings">
             <nav class="nav">
@@ -185,9 +185,7 @@
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a
-                    class="sidebar__link sidebar__link_highlighted"
-                    href="./histogram.html"
+                  ><a class="sidebar__link" href="./histogram.html"
                     >Histogram</a
                   ></small
                 >
@@ -217,7 +215,7 @@
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a class="sidebar__link" href="./accordion.html"
+                  ><a class="sidebar__link sidebar__link_highlighted" href="./accordion.html"
                     >Accordion</a
                   ></small
                 >
@@ -229,56 +227,51 @@
             </div>
           </div>
           <div class="features">
-            <h3 class="features__header">Histogram</h3>
-            <div class="features__element features_aligment-stretch">
-              <div class="histogram">
-                <div class="histogram__header">
-                  <div class="histogram__header-wrapper">
-                    <h4 class="histogram__title">Total orders</h4>
-                    <p class="histogram__count">50254</p>
-                  </div>
-                  <div class="histogram__link-wrapper">
-                    <a class="histogram__link" href="#">View all</a>
-                  </div>
-                </div>
-                <div class="histogram__bars">
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 45px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 17px"></div>
-                </div>
-              </div>
+            <h3 class="features__header">Accordion</h3>
+            <div class="features__element">
+              <section class="accordion">
+                <details open class="accordion__item">
+                  <summary class="accordion__summary">
+                    <svg class="accordion__marker">
+                      <use xlink:href="../../assets/images/sprite.svg#icon-arrow-down" />
+                    </svg>
+                    <p class="accordion__summary-content">За столом сидели</p>
+                  </summary>
+                  <p class="accordion__text">
+                    За столом сидели мужики и ели Мясом конюх угощал своих гостей Все
+                    расхваливали ужин, и хозяин весел был О жене своей всё время
+                    говорил...
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__summary">
+                    <svg class="accordion__marker">
+                      <use xlink:href="../../assets/images/sprite.svg#icon-arrow-down" />
+                    </svg>
+                    <p class="accordion__summary-content">У тебя на полке</p>
+                  </summary>
+                  <p class="accordion__text">
+                    У тебя на полке - Плюшевый мишка и заяц в футболке. Ты давно когда-то
+                    Ранним утром их нашла под ёлкой. А за старым шкафом - Портфель без
+                    ручки и летняя шляпа. Кто-то хитрый и большой Наблюдает за тобой.
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__summary">
+                    <svg class="accordion__marker">
+                      <use xlink:href="../../assets/images/sprite.svg#icon-arrow-down" />
+                    </svg>
+                    <p class="accordion__summary-content">
+                      Просто я живу на улице Ленина
+                    </p>
+                  </summary>
+                  <p class="accordion__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation
+                    veniam consequat sunt nostrud amet.
+                  </p>
+                </details>
+              </section>
             </div>
             <div class="tabs features_aligment-stretch">
               <input
@@ -299,117 +292,111 @@
               </div>
               <div class="tabs__content features__code">
                 <div class="features__code_html tabs__content_html">
-                  <pre><code class="language-html"> &lt;div class=&quot;histogram&quot;&gt;
-    &lt;div class=&quot;histogram__header&quot;&gt;
-        &lt;div class=&quot;histogram__header-wrapper&quot;&gt;
-            &lt;h4 class=&quot;histogram__title&quot;&gt;Total orders&lt;/h4&gt; 
-            &lt;p class=&quot;histogram__count&quot;&gt;50254&lt;/p&gt;                            
-        &lt;/div&gt;
-        &lt;div class=&quot;histogram__link-wrapper&quot;&gt;   
-            &lt;a class=&quot;histogram__link&quot; href=&quot;#&quot; &gt;View all&lt;/a&gt;             
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;histogram__bars&quot;&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt; 
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;                 
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:45px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:17px&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;    
-&lt;/div&gt;
-                                    </code></pre>
+                  <pre><code class="language-html">&lt;section class=&quot;accordion&quot;&gt;
+  &lt;details open class=&quot;accordion__item&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      &lt;svg class=&quot;accordion__marker&quot;&gt;
+        &lt;use xlink:href=&quot;../../assets/images/sprite.svg#icon-arrow-down&quot; /&gt;
+      &lt;/svg&gt;
+      &lt;p class=&quot;accordion__summary-content&quot;&gt;За столом сидели&lt;/p&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      За столом сидели мужики и ели Мясом конюх угощал своих гостей Все
+      расхваливали ужин, и хозяин весел был О жене своей всё время
+      говорил...
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class=&quot;accordion__item&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      &lt;svg class=&quot;accordion__marker&quot;&gt;
+        &lt;use xlink:href=&quot;../../assets/images/sprite.svg#icon-arrow-down&quot; /&gt;
+      &lt;/svg&gt;
+      &lt;p class=&quot;accordion__summary-content&quot;&gt;У тебя на полке&lt;/p&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      У тебя на полке - Плюшевый мишка и заяц в футболке. Ты давно когда-то
+      Ранним утром их нашла под ёлкой. А за старым шкафом - Портфель без
+      ручки и летняя шляпа. Кто-то хитрый и большой Наблюдает за тобой.
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class=&quot;accordion__item&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      &lt;svg class=&quot;accordion__marker&quot;&gt;
+        &lt;use xlink:href=&quot;../../assets/images/sprite.svg#icon-arrow-down&quot; /&gt;
+      &lt;/svg&gt;
+      &lt;p class=&quot;accordion__summary-content&quot;&gt;
+        Просто я живу на улице Ленина
+      &lt;/p&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+    &lt;/p&gt;
+  &lt;/details&gt;
+&lt;/section&gt;
+                  </code></pre>   
                 </div>
                 <div class="features__code_css tabs__content_css">
-                  <pre>
-                                        <code class="language-css"> 
-.histogram {       
-    padding: 8px 12px 12px;                                
-    background-color: var(--white);
-    display: flex; 
-    flex-direction: column;  
-    justify-content: space-between;
+                  <pre><code class="language-html">.accordion {
+  padding: 0 5px;
 }
-.histogram__header{
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-}
-.histogram__header-wrapper{
-    display: flex; 
-    flex-direction: column;
-    justify-content: start;   
-}
-.histogram__title{
-    margin: 0;
-    opacity: 80%;
-    color: var(--black);
-}
-.histogram__count{
-    margin: 6px 0 0;                              
-    color: var(--black);
-}
-.histogram__link-wrapper{
-    margin: 3px 0 0 5px;
-}
-.histogram__link{
-    color:var(--blue-2); 
-}
-.histogram__title{
-    margin: 0;
-}
-.histogram__bars{
-    margin: 19px 0 2px;
-    height: 50px;                              
-    display: flex; 
-    align-items: flex-end;   
-}
-.histogram__bar{
-    flex-grow: 1;
-    margin: 0 1px;                                
-    background: var(--blue-2);
-}
-@media screen and (min-width: 768px){
-    .histogram {       
+.accordion__item {
+    padding: 16px 16px;
+    margin-bottom: 8px;
+    background: var(--bg-white);
     border: 1px solid var(--grey-3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 8px;
-    padding: 16px 24px 24px;
+
+    position: relative;
+  }
+@media screen and (min-width: 768px) {
+.accordion__item {
+      padding: 24px 24px
+  }
     }
-    .histogram__bars{
-        margin: 39px 0 2px;
+.accordion__item:last-child {
+    margin-bottom: 0;
+  }
+.accordion__text {
+    margin: 16px 0 8px 0;
+    color: var(--grey-4);
+  }
+.accordion__summary {
+    display: block;
+    cursor: pointer;
+  }
+.accordion__summary-content {
+    margin: 0 20px 0 0; 
+    color: var(--color-main);
+  }
+@media screen and (min-width: 768px) {
+.accordion__summary-content {
+      margin: 0 36px 0 0
+  }
     }
-}
-                                        </code>
-                                    </pre>
+.accordion__summary::-webkit-details-marker {
+    display: none;
+  }
+.accordion__marker {
+    width: 16px;
+    height: 8px;
+    color: var(--color-grey-4);
+    position: absolute;
+    right: 16px;
+    top: 32px;
+  }
+@media screen and (min-width: 768px) {
+.accordion__marker {
+      right: 32px
+  }
+    }
+.accordion__item[open] .accordion__marker {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+                  </code></pre>  
                 </div>
               </div>
             </div>

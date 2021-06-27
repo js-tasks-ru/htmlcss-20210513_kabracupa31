@@ -11,9 +11,9 @@
     }
     &_template {
       padding: 0 0 24px;
-      background-color: var(--bg-secondary);
       @media screen and (min-width: 768px) {
         padding: 0 0 56px;
+        background-color: var(--bg-secondary);
       }
     }
     &__container {

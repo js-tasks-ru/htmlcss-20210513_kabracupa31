@@ -48,6 +48,8 @@
 
     display: flex;
     align-items: flex-end;
+
+    animation: grow-bars 200ms ease-in-out;
     @media screen and (min-width: 768px) {
       margin: 39px 0 2px;
     }
@@ -57,5 +59,15 @@
     margin: 0 1px;
 
     background: var(--blue-2);
+  }
+}
+@keyframes grow-bars{
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom center;
   }
 }

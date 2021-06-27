@@ -35,7 +35,7 @@
               <rect x="38" width="32" height="32" rx="16" fill="currentColor" />
               <path d="M78 0L110 32H78V0Z" fill="currentColor" />
             </svg>
-          </a>
+            </a>
           </div>
           <div class="header__settings">
             <nav class="nav">
@@ -185,14 +185,12 @@
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a
-                    class="sidebar__link sidebar__link_highlighted"
-                    href="./histogram.html"
+                  ><a class="sidebar__link" href="./histogram.html"
                     >Histogram</a
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a class="sidebar__link" href="./skeleton.html"
+                  ><a class="sidebar__link sidebar__link_highlighted" href="./skeleton.html"
                     >Skeleton</a
                   ></small
                 >
@@ -229,56 +227,21 @@
             </div>
           </div>
           <div class="features">
-            <h3 class="features__header">Histogram</h3>
+            <h3 class="features__header">Skeleton</h3> 
             <div class="features__element features_aligment-stretch">
-              <div class="histogram">
-                <div class="histogram__header">
-                  <div class="histogram__header-wrapper">
-                    <h4 class="histogram__title">Total orders</h4>
-                    <p class="histogram__count">50254</p>
-                  </div>
-                  <div class="histogram__link-wrapper">
-                    <a class="histogram__link" href="#">View all</a>
+              <div class="skeleton">
+                <div class="skeleton__header">
+                  <div class="skeleton__avatar"></div>
+                  <div class="skeleton__header-lines">
+                    <div class="skeleton__line skeleton__header-line_shorter"></div>
+                    <div class="skeleton__line skeleton__header-line_short"></div>
                   </div>
                 </div>
-                <div class="histogram__bars">
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 45px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 17px"></div>
+                <div class="skeleton__content">
+                  <div class="skeleton__line"></div>
+                  <div class="skeleton__line"></div>
                 </div>
-              </div>
+              </div>  
             </div>
             <div class="tabs features_aligment-stretch">
               <input
@@ -299,117 +262,178 @@
               </div>
               <div class="tabs__content features__code">
                 <div class="features__code_html tabs__content_html">
-                  <pre><code class="language-html"> &lt;div class=&quot;histogram&quot;&gt;
-    &lt;div class=&quot;histogram__header&quot;&gt;
-        &lt;div class=&quot;histogram__header-wrapper&quot;&gt;
-            &lt;h4 class=&quot;histogram__title&quot;&gt;Total orders&lt;/h4&gt; 
-            &lt;p class=&quot;histogram__count&quot;&gt;50254&lt;/p&gt;                            
-        &lt;/div&gt;
-        &lt;div class=&quot;histogram__link-wrapper&quot;&gt;   
-            &lt;a class=&quot;histogram__link&quot; href=&quot;#&quot; &gt;View all&lt;/a&gt;             
-        &lt;/div&gt;
+                  <pre><code class="language-html"> &lt;div class=&quot;skeleton&quot;&gt;
+  &lt;div class=&quot;skeleton__header&quot;&gt;
+    &lt;div class=&quot;skeleton__avatar&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;skeleton__header-lines&quot;&gt;
+      &lt;div class=&quot;skeleton__line skeleton__header-line_shorter&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;skeleton__line skeleton__header-line_short&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;histogram__bars&quot;&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt; 
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;                 
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:45px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:17px&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;    
+  &lt;/div&gt;
+  &lt;div class=&quot;skeleton__content&quot;&gt;
+    &lt;div class=&quot;skeleton__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;skeleton__line&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-                                    </code></pre>
+                  </code></pre>   
                 </div>
                 <div class="features__code_css tabs__content_css">
-                  <pre>
-                                        <code class="language-css"> 
-.histogram {       
-    padding: 8px 12px 12px;                                
-    background-color: var(--white);
-    display: flex; 
-    flex-direction: column;  
-    justify-content: space-between;
+                  <pre><code class="language-html">.skeleton {
+  padding: 24px;
+
+  background-color: var(--bg-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
 }
-.histogram__header{
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-}
-.histogram__header-wrapper{
-    display: flex; 
-    flex-direction: column;
-    justify-content: start;   
-}
-.histogram__title{
-    margin: 0;
-    opacity: 80%;
-    color: var(--black);
-}
-.histogram__count{
-    margin: 6px 0 0;                              
-    color: var(--black);
-}
-.histogram__link-wrapper{
-    margin: 3px 0 0 5px;
-}
-.histogram__link{
-    color:var(--blue-2); 
-}
-.histogram__title{
-    margin: 0;
-}
-.histogram__bars{
-    margin: 19px 0 2px;
-    height: 50px;                              
-    display: flex; 
-    align-items: flex-end;   
-}
-.histogram__bar{
-    flex-grow: 1;
-    margin: 0 1px;                                
-    background: var(--blue-2);
-}
-@media screen and (min-width: 768px){
-    .histogram {       
+@media screen and (min-width: 768px) {
+.skeleton {
     border: 1px solid var(--grey-3);
-    border-radius: 8px;
-    padding: 16px 24px 24px;
-    }
-    .histogram__bars{
-        margin: 39px 0 2px;
-    }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px
 }
-                                        </code>
-                                    </pre>
+  }
+.skeleton__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    gap: 16px;
+  }
+.skeleton__avatar {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+  background: -o-linear-gradient(
+    357.49deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background-size: 200%;
+  -webkit-animation-name: gradient;
+          animation-name: gradient;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  }
+@media screen and (min-width: 768px) {
+.skeleton__avatar {
+      height: 64px;
+      width: 64px
+  }
+    }
+.skeleton__header-lines {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+.skeleton__line {
+    height: 20px;
+  background: -o-linear-gradient(
+    357.49deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background-size: 200%;
+  -webkit-animation-name: gradient;
+          animation-name: gradient;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  }
+.skeleton__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+.skeleton__line + .skeleton__line {
+    margin-top: 8px;
+  }
+.skeleton__header-line_shorter {
+    width: 60%;
+  }
+.skeleton__header-line_short {
+    width: 80%;
+  }
+@-webkit-keyframes gradient {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+                  </code></pre>  
                 </div>
               </div>
             </div>

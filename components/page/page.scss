@@ -15,5 +15,11 @@ body {
       padding: 0;
     }
   }
-  
+  &__link {
+    display: block;
+    height: 100%;
+    text-decoration-line: none;
+    color: var(--color-main);
+    cursor: pointer;
+  }
 }
