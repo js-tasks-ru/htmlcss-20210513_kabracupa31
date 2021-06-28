@@ -21,6 +21,7 @@
   --grey-4: #495057;
   --grey-5: #f9fafc;
   --grey-6: #c4c4c4;
+  --grey-6-alfa-50: #C4C4C450;
   --grey-7: #90a0b7;
   --grey-8: #334d6e;
   --grey-9: #e5e5e5;
@@ -39,6 +40,7 @@
   --color-calendar-7: var(--grey-7);
   --color-calendar-8: var(--grey-8);
   --color-grey-4: var(--grey-4);
+  --hsl-lightness-shadow: 0%;
 }
 :root[data-theme-dark] {
   --bg-main: var(--grey-4);
@@ -48,6 +50,7 @@
   --color-grey-4: var(--white-alfa75);
   --color-calendar-7: var(--grey-3);
   --color-calendar-8: var(--grey-3);
+  --hsl-lightness-shadow: 100%;
 }
 
 * {
