@@ -1,12 +1,44 @@
-<!DOCTYPE html>
-<!-- Страница с модалкой -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../assets/css/style.css" />
         <title>Modal</title>
+        <style>
+            body{
+                display: flex;            
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
     </head>
     <body>
+        <button type="button" class="button button_primary" id="modal-open" style="flex-basis:189px"><p class="button__text">Open modal</p></button>
+        <div class="modal" id="modal">
+            <form class="modal__content">
+                <svg class="modal__icon" id="modal-close">            
+                    <use xlink:href="../../assets/images/sprite.svg#icon-close"/>
+                </svg>
+                <h4 class="modal__header">
+                    Modal title
+                </h4>
+                <div class="modal__body">
+                    <label class="custom-input">
+                        <div class="custom-input__icon">
+                            <svg class="custom-input__icon-success">            
+                                <use xlink:href="../../assets/images/sprite.svg#icon-success"/>
+                            </svg>
+                            <svg class="custom-input__icon-error">            
+                                <use xlink:href="../../assets/images/sprite.svg#icon-error"/>
+                            </svg>
+                        </div>
+                        <div class="custom-input__label">label</div>
+                        <input type="text" id="custom-input__input" name="name" class="custom-input__input"  placeholder="Placeholder">
+                    </label>
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="modal__submit button button_primary button_full-width"><p class="button__text">Submit</p></button>
+                </div>
+            </form>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>

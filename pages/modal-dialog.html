@@ -35,7 +35,7 @@
               <rect x="38" width="32" height="32" rx="16" fill="currentColor" />
               <path d="M78 0L110 32H78V0Z" fill="currentColor" />
             </svg>
-          </a>
+            </a>
           </div>
           <div class="header__settings">
             <nav class="nav">
@@ -184,9 +184,7 @@
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a
-                    class="sidebar__link sidebar__link_highlighted"
-                    href="./histogram.html"
+                  ><a class="sidebar__link" href="./histogram.html"
                     >Histogram</a
                   ></small
                 >
@@ -206,7 +204,7 @@
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a class="sidebar__link" href="./modal-dialog.html"
+                  ><a class="sidebar__link sidebar__link_highlighted" href="./modal-dialog.html"
                     >Modal dialog</a
                   ></small
                 >
@@ -228,55 +226,35 @@
             </div>
           </div>
           <div class="features">
-            <h3 class="features__header">Histogram</h3>
-            <div class="features__element features_aligment-stretch">
-              <div class="histogram">
-                <div class="histogram__header">
-                  <div class="histogram__header-wrapper">
-                    <h4 class="histogram__title">Total orders</h4>
-                    <p class="histogram__count">50254</p>
-                  </div>
-                  <div class="histogram__link-wrapper">
-                    <a class="histogram__link" href="#">View all</a>
-                  </div>
-                </div>
-                <div class="histogram__bars">
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 50px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 39px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 22px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 45px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 30px"></div>
-                  <div class="histogram__bar" style="height: 11px"></div>
-                  <div class="histogram__bar" style="height: 35px"></div>
-                  <div class="histogram__bar" style="height: 17px"></div>
-                </div>
+            <h3 class="features__header">Modal dialog</h3>
+            <div class="features__element">
+              <button type="button" class="button button_primary" id="modal-open" style="flex-basis:189px"><p class="button__text">Open modal</p></button>
+              <div class="modal" id="modal">
+                  <form class="modal__content">
+                      <svg class="modal__icon" id="modal-close">            
+                          <use xlink:href="../../assets/images/sprite.svg#icon-close"/>
+                      </svg>
+                      <h4 class="modal__header">
+                          Modal title
+                      </h4>
+                      <div class="modal__body">
+                          <label class="custom-input">
+                              <div class="custom-input__icon">
+                                  <svg class="custom-input__icon-success">            
+                                      <use xlink:href="../../assets/images/sprite.svg#icon-success"/>
+                                  </svg>
+                                  <svg class="custom-input__icon-error">            
+                                      <use xlink:href="../../assets/images/sprite.svg#icon-error"/>
+                                  </svg>
+                              </div>
+                              <div class="custom-input__label">label</div>
+                              <input type="text" id="custom-input__input" name="name" class="custom-input__input"  placeholder="Placeholder">
+                          </label>
+                      </div>
+                      <div class="modal__footer">
+                          <button type="submit" class="modal__submit button button_primary button_full-width"><p class="button__text">Submit</p></button>
+                      </div>
+                  </form>
               </div>
             </div>
             <div class="tabs features_aligment-stretch">
@@ -298,117 +276,115 @@
               </div>
               <div class="tabs__content features__code">
                 <div class="features__code_html tabs__content_html">
-                  <pre><code class="language-html"> &lt;div class=&quot;histogram&quot;&gt;
-    &lt;div class=&quot;histogram__header&quot;&gt;
-        &lt;div class=&quot;histogram__header-wrapper&quot;&gt;
-            &lt;h4 class=&quot;histogram__title&quot;&gt;Total orders&lt;/h4&gt; 
-            &lt;p class=&quot;histogram__count&quot;&gt;50254&lt;/p&gt;                            
+                  <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;button button_primary&quot; id=&quot;modal-open&quot; style=&quot;flex-basis:189px&quot;&gt;&lt;p class=&quot;button__text&quot;&gt;Open modal&lt;/p&gt;&lt;/button&gt;
+&lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
+  &lt;form class=&quot;modal__content&quot;&gt;
+    &lt;svg class=&quot;modal__icon&quot; id=&quot;modal-close&quot;&gt;            
+      &lt;use xlink:href=&quot;../../assets/images/sprite.svg#icon-close&quot;/&gt;
+    &lt;/svg&gt;
+    &lt;h4 class=&quot;modal__header&quot;&gt;
+      Modal title
+    &lt;/h4&gt;
+    &lt;div class=&quot;modal__body&quot;&gt;
+      &lt;label class=&quot;custom-input&quot;&gt;
+        &lt;div class=&quot;custom-input__icon&quot;&gt;
+          &lt;svg class=&quot;custom-input__icon-success&quot;&gt;            
+            &lt;use xlink:href=&quot;../../assets/images/sprite.svg#icon-success&quot;/&gt;
+          &lt;/svg&gt;
+          &lt;svg class=&quot;custom-input__icon-error&quot;&gt;            
+            &lt;use xlink:href=&quot;../../assets/images/sprite.svg#icon-error&quot;/&gt;
+          &lt;/svg&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;histogram__link-wrapper&quot;&gt;   
-            &lt;a class=&quot;histogram__link&quot; href=&quot;#&quot; &gt;View all&lt;/a&gt;             
-        &lt;/div&gt;
+        &lt;div class=&quot;custom-input__label&quot;&gt;label&lt;/div&gt;
+        &lt;input type=&quot;text&quot; id=&quot;custom-input__input&quot; name=&quot;name&quot; class=&quot;custom-input__input&quot;  placeholder=&quot;Placeholder&quot;&gt;
+      &lt;/label&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;histogram__bars&quot;&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt; 
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;                 
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:39px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:22px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:45px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:30px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:11px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:35px&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;histogram__bar&quot; style=&quot;height:17px&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;    
+    &lt;div class=&quot;modal__footer&quot;&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;modal__submit button button_primary button_full-width&quot;&gt;&lt;p class=&quot;button__text&quot;&gt;Submit&lt;/p&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
 &lt;/div&gt;
-                                    </code></pre>
+                  </code></pre>   
                 </div>
                 <div class="features__code_css tabs__content_css">
-                  <pre>
-                                        <code class="language-css"> 
-.histogram {       
-    padding: 8px 12px 12px;                                
-    background-color: var(--white);
-    display: flex; 
-    flex-direction: column;  
-    justify-content: space-between;
-}
-.histogram__header{
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-}
-.histogram__header-wrapper{
-    display: flex; 
-    flex-direction: column;
-    justify-content: start;   
-}
-.histogram__title{
-    margin: 0;
-    opacity: 80%;
-    color: var(--black);
-}
-.histogram__count{
-    margin: 6px 0 0;                              
-    color: var(--black);
-}
-.histogram__link-wrapper{
-    margin: 3px 0 0 5px;
-}
-.histogram__link{
-    color:var(--blue-2); 
-}
-.histogram__title{
-    margin: 0;
-}
-.histogram__bars{
-    margin: 19px 0 2px;
-    height: 50px;                              
-    display: flex; 
-    align-items: flex-end;   
-}
-.histogram__bar{
-    flex-grow: 1;
-    margin: 0 1px;                                
-    background: var(--blue-2);
-}
-@media screen and (min-width: 768px){
-    .histogram {       
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
-    padding: 16px 24px 24px;
-    }
-    .histogram__bars{
-        margin: 39px 0 2px;
-    }
-}
-                                        </code>
-                                    </pre>
+                  <pre><code class="language-html">.modal{
+    display: none;
+    background: var(--grey-6-alfa-50);
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    -webkit-box-align: center;
+  
+        -ms-flex-align: center;
+  
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    
+  }
+.modal_default-visible{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;    
+      }
+.modal__content{
+        position: relative;
+        background: var(--bg-white);
+        border-radius: 8px;
+        padding: 30px 40px 33px 40px;
+        max-width: 480px;
+      
+        display: -webkit-box;
+      
+        display: -ms-flexbox;
+      
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 14px;
+      }
+.modal__header{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+      
+        color: var(--color-calendar-8);
+      }
+.modal__body{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      
+        color: var(--color-grey-4);
+      }
+.modal__icon{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      
+        width: 16px;
+        height: 16px;
+        color: var(--color-grey-4);
+      
+        cursor: pointer;
+      }
+                  </code></pre>  
                 </div>
               </div>
             </div>
@@ -428,6 +404,7 @@
       src="../10-lection8/01-theme-changer/theme-changer.js"
     ></script>
     <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script src="../05-lection3/02-modal/index.js"></script>
   </body>
   <footer></footer>
 </html>

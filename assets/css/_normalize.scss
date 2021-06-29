@@ -282,8 +282,9 @@ textarea {
 
 [type='checkbox'],
 [type='radio'] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+ // box-sizing: border-box; /* 1 */
+ // padding: 0; /* 2 */
+  appearance: none;
 }
 
 /**

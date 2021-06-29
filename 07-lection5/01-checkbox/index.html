@@ -1,11 +1,51 @@
-<!DOCTYPE html>
 <!-- Страница чекбокса -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./checkbox.css">
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:flex-start;
+                gap: 15px;
+                height: 300px;
+            }
+        </style>
     </head>
     <body>
-
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" value="">
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">            
+                        <use xlink:href="../../assets/images/sprite.svg#checkbox-icon"/>
+                    </svg>
+                </div> 
+                <div class="checkbox__text checkbox__text_default"></div> 
+            </div> 
+        </label>
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" value="" checked>
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">            
+                        <use xlink:href="../../assets/images/sprite.svg#checkbox-icon"/>
+                    </svg>
+                </div> 
+                <div class="checkbox__text checkbox__text_default"></div> 
+            </div>     
+        </label>
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" value="" disabled>
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">            
+                        <use xlink:href="../../assets/images/sprite.svg#checkbox-icon"/>
+                    </svg>
+                </div> 
+                <div class="checkbox__text">Disabled</div> 
+            </div>     
+        </label>
     </body>
 </html>
