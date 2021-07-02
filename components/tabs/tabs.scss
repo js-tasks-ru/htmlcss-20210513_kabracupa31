@@ -31,12 +31,18 @@
     color: var(--color-secondary);
 
     overflow-x: auto;
+    scrollbar-width: none;
 
     @media screen and (min-width: 768px) {
       gap: 40px;
       padding-left: 0;
     }
   }
+  /*
+  &__scroller-inner::-moz-scrollbar {
+    display: none;
+  }
+  */
   &__scroller_padding-left-42 {
     padding-left: 16px;
     @media screen and (min-width: 768px) {
