@@ -1,3 +1,8 @@
+@mixin border-properties() {
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 28px;
+}
 .calendar {
   max-width: 304px;
   box-sizing: border-box;
@@ -5,12 +10,14 @@
 
   padding: 14px;
 
-  @media screen and (min-width: $bp-small) {
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
-    padding: 28px;
+  @include border-properties();
+  
+  &_no-border-mobile {
+    border: none;
+    @media screen and (min-width: $bp-small) {
+      @include border-properties();
+    }
   }
-
   &__caption {
     text-align: center;
     font-weight: 600;
@@ -29,7 +36,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
   }
-  &_preview{
+  &_preview {
     width: 250px;
     @media screen and (min-width: $bp-xsmall) {
       width: 160px;

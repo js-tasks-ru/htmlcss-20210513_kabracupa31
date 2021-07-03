@@ -1,3 +1,8 @@
+@mixin border-properties() {
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 16px 24px 24px;
+}
 .histogram {
   padding: 8px 12px 12px;
 
@@ -5,11 +10,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include border-properties();
 
-  @media screen and (min-width: $bp-small) {
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
-    padding: 16px 24px 24px;
+  &_no-border-mobile {
+    border: none;
+    @media screen and (min-width: $bp-small) {
+      @include border-properties();
+    }
   }
 
   &__header {
@@ -61,7 +68,7 @@
     background: var(--blue-2);
   }
 }
-@keyframes grow-bars{
+@keyframes grow-bars {
   0% {
     transform: scaleY(0);
     transform-origin: bottom center;

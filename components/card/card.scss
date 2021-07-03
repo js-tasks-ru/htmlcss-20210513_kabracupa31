@@ -32,7 +32,7 @@
       visibility: hidden;
     }
   }
- 
+
   &__title {
     text-align: center;
     font-weight: 500;
@@ -54,12 +54,12 @@
   &__content_flex-column {
     display: flex;
     flex-direction: column;
-  
+
     gap: 5px;
     padding: 0 5px;
     flex-wrap: wrap;
   }
-  &__content_grid{
+  &__content_grid {
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
@@ -68,7 +68,7 @@
     }
   }
   &__description {
-    min-width: 0; 
+    min-width: 0;
     max-width: 100%;
   }
 }

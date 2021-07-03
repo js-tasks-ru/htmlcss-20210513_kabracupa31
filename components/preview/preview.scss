@@ -1,4 +1,3 @@
-
 .preview {
   display: flex;
   min-height: calc(100vh - 254px- 220px);
@@ -24,11 +23,12 @@
     border-radius: 12px;
     padding: 0 16px;
 
-    @media screen and (min-width: $bp-xsmall) { /*в идеале 768, 400 - чтобы видеть исправленную ошибку с card__title*/
+    @media screen and (min-width: $bp-xsmall) {
+      /*в идеале 768, 400 - чтобы видеть исправленную ошибку с card__title*/
       width: calc(50% - 16px);
       margin: 8px;
     }
-    @media screen and (min-width: $bp-medium) { 
+    @media screen and (min-width: $bp-medium) {
       width: calc(33.3% - 30px);
       margin: 15px;
     }
