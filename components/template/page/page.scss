@@ -1,6 +1,6 @@
 .page-template {
-  background: var(--bg-white); /*по идее, убрать*/
-  @media screen and (min-width: 768px) {
+  background: var(--bg-white); 
+  @media screen and (min-width: $bp-small) {
     background: var(--bg-secondary);
   }
   &__inner {
@@ -8,8 +8,8 @@
     grid-template-rows: auto auto auto;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 5px;
-    @media screen and (min-width: 768px) {
+    padding: 0 16px;
+    @media screen and (min-width: $bp-small) {
       gap: 56px;
     }
   }

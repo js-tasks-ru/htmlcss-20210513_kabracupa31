@@ -1,15 +1,16 @@
 .nav {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $bp-small) {
     display: inline-flex;
     align-items: center;
-    gap: 57px;
+    gap: 24px;
     margin-right: 57px;
   }
   &__item {
     font-size: 16px;
     line-height: 24px;
     color: var(--color-secondary);
+    text-decoration: none;
   }
   &__item_active {
     color: var(--color-main);

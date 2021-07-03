@@ -1,6 +1,6 @@
+@import './main.scss';
 @import './_normalize.scss';
 @import './_tipography.scss';
-@import './main.scss';
 
 @import '../../components/header/header.scss';
 @import '../../components/nav/nav.scss';
@@ -11,8 +11,8 @@
 @import '../../components/page/page.scss';
 @import '../../components/preview/preview.scss';
 
-@import '../../components/template/page/page.scss';
 @import '../../components/template/main/main.scss';
+@import '../../components/template/page/page.scss';
 @import '../../components/template/main/features/features.scss';
 @import '../../components/template/main/sidebar/sidebar.scss';
 

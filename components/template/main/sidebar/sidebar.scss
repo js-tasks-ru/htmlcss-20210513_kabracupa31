@@ -1,6 +1,6 @@
 .sidebar {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $bp-small) {
     align-self: flex-start;
     flex-shrink: 0;
 
@@ -15,7 +15,7 @@
    
       color: var(--grey-3);
       margin: 0 0 16px 0;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $bp-small) {
         color: var(--main-color);
       }
   }
@@ -26,7 +26,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       gap: 16px;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $bp-small) {
         gap: 4px;
       }
   }

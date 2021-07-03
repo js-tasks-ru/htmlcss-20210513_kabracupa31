@@ -10,7 +10,7 @@
 
   overflow: hidden;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $bp-small) {
     padding: 32px 25px;
   }
 
@@ -28,10 +28,11 @@
     width: 100%;
     background: var(--grey-2);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $bp-small) {
       visibility: hidden;
     }
   }
+ 
   &__title {
     text-align: center;
     font-weight: 500;
@@ -39,13 +40,14 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 0 12px;
   }
   &__type {
     margin-top: 6px;
     text-align: center;
     color: var(--grey-3);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $bp-small) {
       color: var(--color-grey-4);
     }
   }
@@ -61,8 +63,12 @@
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $bp-small) {
       grid-template-columns: auto auto;
     }
+  }
+  &__description {
+    min-width: 0; 
+    max-width: 100%;
   }
 }
