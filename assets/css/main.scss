@@ -67,3 +67,21 @@ $bp-medium: 1024px;
 .no-pointer-events{
   pointer-events: none;
 }
+.preload *:not(.skeleton *) {
+ /* -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -ms-animation: none !important;
+  -o-animation: none !important;*/
+  animation-duration: 0s !important;
+  -moz-animation-duration: 0s !important;
+  -webkit-anianimation-duration: 0s !important;
+  -o-animation-duration: 0s !important;
+  transition:all 0s !important;
+  -moz-transition: all 0s !important;
+  -webkit-transition:all 0s !important;
+  -o-transition:all 0s !important;
+}
