@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
+  <body class="preload">
     <div class="page-template">
       <div class="page-template__inner">
         <div
@@ -60,6 +60,7 @@
                   <div class="toggler__control">
                     <div class="toggler__icon"></div>
                   </div>
+                  <div class="toggler__text"></div>
                 </div>
               </label>
               <svg class="theme__dark">
@@ -170,7 +171,9 @@
               <h4 class="sidebar__items-title">Elements</h4>
               <div class="sidebar__items-list">
                 <small class="sidebar__item"
-                  ><a class="sidebar__link" href="./avatar.html"
+                  ><a
+                    class="sidebar__link sidebar__link_highlighted"
+                    href="./avatar.html"
                     >Avatar</a
                   ></small
                 >
@@ -222,10 +225,16 @@
             </div>
           </div>
           <div class="features">
-            <h3 class="features__header"></h3>
-            <!--copy element name-->
-            <div class="features__element"></div>
-            <!--copy element-->
+            <h3 class="features__header">Avatar</h3>
+            <div class="features__element">
+              <div class="avatar avatar_medium">
+                <img
+                  class="avatar__img"
+                  src="../06-lection4/01-avatar/public/avatar-200.jpg"
+                  alt="Аватар"
+                />
+              </div>
+            </div>
             <div class="tabs features_aligment-stretch">
               <input
                 class="tabs__input"
@@ -245,11 +254,35 @@
               </div>
               <div class="tabs__content features__code">
                 <div class="features__code_html tabs__content_html">
-                  <pre><code class="language-html"> <!--copy html code-->
+                  <pre><code class="language-html">&lt;div class=&quot;avatar avatar_medium&quot;&gt;
+  &lt;img class=&quot;avatar__img&quot; src=&quot;./public/avatar-200.jpg&quot; alt=&quot;Аватар&quot; /&gt;
+&lt;/div&gt;
                   </code></pre>
                 </div>
                 <div class="features__code_css tabs__content_css">
-                  <pre><code class="language-html"> <!--copy css code-->
+                  <pre><code class="language-css">.avatar {
+  width: 100%;
+  height: 100%;
+}
+.avatar_big {
+  width: 204px;
+  height: 204px;
+}
+.avatar_medium {
+  width: 102px;
+  height: 102px;
+}
+.avatar_small {
+  width: 64px;
+  height: 64px;
+}
+.avatar__img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
                   </code></pre>
                 </div>
               </div>
@@ -270,6 +303,10 @@
       src="../10-lection8/01-theme-changer/theme-changer.js"
     ></script>
     <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script
+      defer
+      src="../libs/preload.js"
+    ></script>
   </body>
   <footer></footer>
 </html>

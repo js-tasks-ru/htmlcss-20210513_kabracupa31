@@ -4,13 +4,8 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <script
-      defer
-      src="../10-lection8/01-theme-changer/theme-changer.js"
-    ></script>
   </head>
-  <body>
+  <body class="preload">
     <div class="page-template">
       <div class="page-template__inner">
         <div
@@ -21,21 +16,29 @@
             header_padding-template
           "
         >
-          <svg class="header__menu-trigger">
+          <svg class="header__menu-trigger" id="burger-menu-open">
             <use xlink:href="../assets/images/sprite.svg#menu-icon" />
           </svg>
           <div class="header__logo">
-            <svg
-              width="110"
-              height="32"
-              viewBox="0 0 110 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="1" width="30" height="30" fill="currentColor" />
-              <rect x="38" width="32" height="32" rx="16" fill="currentColor" />
-              <path d="M78 0L110 32H78V0Z" fill="currentColor" />
-            </svg>
+            <a class="page__link" href="../index.html">
+              <svg
+                width="110"
+                height="32"
+                viewBox="0 0 110 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="1" width="30" height="30" fill="currentColor" />
+                <rect
+                  x="38"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  fill="currentColor"
+                />
+                <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+              </svg>
+            </a>
           </div>
           <div class="header__settings">
             <nav class="nav">
@@ -65,6 +68,102 @@
             </div>
           </div>
         </div>
+        <div class="burger-menu" id="burger-menu">
+          <div class="burger-menu__header">
+            <div class="burger-menu__wrapper-icon" id="burger-menu-close">
+              <svg class="burger-menu__icon">
+                <use
+                  xlink:href="../assets\images\sprite.svg#icon-burger-close"
+                />
+              </svg>
+            </div>
+            <div class="burger-menu__logo">
+              <svg
+                width="110"
+                height="32"
+                viewBox="0 0 110 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="1" width="30" height="30" fill="currentColor" />
+                <rect
+                  x="38"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  fill="currentColor"
+                />
+                <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+              </svg>
+            </div>
+          </div>
+          <div class="burger-menu__body">
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__theme">
+              <span>Dark mode</span>
+              <label class="theme__trigger toggler">
+                <input
+                  class="toggler__input"
+                  type="checkbox"
+                  id="burger-theme-changer"
+                />
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <div class="toggler__icon"></div>
+                  </div>
+                  <div class="toggler__text"></div>
+                </div>
+              </label>
+            </div>
+            <div class="burger-menu__line"></div>
+
+            <div class="sidebar__items">
+              <h3 class="sidebar__items-title">Elements</h3>
+              <div class="sidebar__items-list">
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./avatar.html">Avatar</a>
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./custom-form-elements.html"
+                    >Custom form elements</a
+                  >
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./histogram.html">Histogram</a>
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./skeleton.html">Skeleton</a>
+                </h4>
+              </div>
+            </div>
+            <div class="sidebar__items">
+              <h3 class="sidebar__items-title">Containers</h3>
+              <div class="sidebar__items-list">
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./calendar.html">Calendar</a>
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./modal-dialog.html"
+                    >Modal dialog</a
+                  >
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./tooltip.html">Tooltip</a>
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./accordion.html">Accordion</a>
+                </h4>
+              </div>
+            </div>
+            <div class="sidebar__items">
+              <h3 class="sidebar__items-title">Templates</h3>
+              <div class="sidebar__items-list"></div>
+            </div>
+            <h4 class="sidebar__item">
+              <a class="sidebar__link" href="../index.html">Main page</a>
+            </h4>
+          </div>
+        </div>
         <div class="main-template">
           <div class="sidebar">
             <div class="sidebar__items">
@@ -88,8 +187,8 @@
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a class="sidebar__link" href="./sceleton.html"
-                    >Sceleton</a
+                  ><a class="sidebar__link" href="./skeleton.html"
+                    >Skeleton</a
                   ></small
                 >
               </div>
@@ -126,8 +225,8 @@
           </div>
           <div class="features">
             <h3 class="features__header">Histogram</h3>
-            <div class="features__element">
-              <div class="histogram">
+            <div class="features__element features_aligment-stretch">
+              <div class="histogram preload-animation">
                 <div class="histogram__header">
                   <div class="histogram__header-wrapper">
                     <h4 class="histogram__title">Total orders</h4>
@@ -294,7 +393,7 @@
     margin: 0 1px;                                
     background: var(--blue-2);
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: $bp-small){
     .histogram {       
     border: 1px solid var(--grey-3);
     border-radius: 8px;
@@ -320,6 +419,15 @@
         </div>
       </div>
     </div>
+    <script
+      defer
+      src="../10-lection8/01-theme-changer/theme-changer.js"
+    ></script>
+    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script
+      defer
+      src="../libs/preload.js"
+    ></script>
   </body>
   <footer></footer>
 </html>

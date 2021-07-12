@@ -1,3 +1,8 @@
+@mixin border-properties() {
+  border: 1px solid var(--grey-3);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
 @mixin skeleton_background-gradient($time) {
   background: linear-gradient(
     92.51deg,
@@ -23,10 +28,13 @@
   flex-direction: column;
   gap: 24px;
 
-  @media screen and (min-width: 768px) {
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
-    border-radius: 8px;
+  @include border-properties();
+  
+  &_no-border-mobile {
+    border: none;
+    @media screen and (min-width: $bp-small) {
+      @include border-properties();
+    }
   }
   &__header {
     display: flex;
@@ -42,7 +50,7 @@
 
     @include skeleton_background-gradient(2s);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: px) {
       height: 64px;
       width: 64px;
     }

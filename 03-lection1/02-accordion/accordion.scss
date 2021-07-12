@@ -10,7 +10,7 @@
     border-radius: 8px;
 
     position: relative;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $bp-small) {
       padding: 24px 24px;
     }
   }
@@ -26,14 +26,13 @@
     cursor: pointer;
   }
   &__summary-content {
-    margin: 0 20px 0 0; /* - наползание маркера на текст*/
+    margin: 0 20px 0 0; 
     color: var(--color-main);
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $bp-small) {
       margin: 0 36px 0 0;
     }
   }
   &__summary::-webkit-details-marker {
-    /* нестандартный псевдоэлемент Google Chrome */
     display: none;
   }
   &__marker {
@@ -43,7 +42,7 @@
     position: absolute;
     right: 16px;
     top: 32px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $bp-small) {
       right: 32px;
     }
   }

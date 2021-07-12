@@ -361,3 +361,11 @@ template {
 [hidden] {
   display: none;
 }
+/*
+@-moz-document url-prefix() {
+  scrollbar-width: none;
+}
+*::-moz-scrollbar-track {
+  display: none;
+}
+*/

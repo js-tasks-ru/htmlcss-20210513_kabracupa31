@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
+  <body class="preload">
     <div class="page-template">
       <div class="page-template__inner">
         <div
@@ -60,6 +60,7 @@
                   <div class="toggler__control">
                     <div class="toggler__icon"></div>
                   </div>
+                  <div class="toggler__text"></div>
                 </div>
               </label>
               <svg class="theme__dark">
@@ -210,7 +211,9 @@
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a class="sidebar__link" href="./accordion.html"
+                  ><a
+                    class="sidebar__link sidebar__link_highlighted"
+                    href="./accordion.html"
                     >Accordion</a
                   ></small
                 >
@@ -222,10 +225,59 @@
             </div>
           </div>
           <div class="features">
-            <h3 class="features__header"></h3>
-            <!--copy element name-->
-            <div class="features__element"></div>
-            <!--copy element-->
+            <h3 class="features__header">Accordion</h3>
+            <div class="features__element">
+              <section class="accordion">
+                <details open class="accordion__item">
+                  <summary class="accordion__summary">
+                    <svg class="accordion__marker">
+                      <use
+                        xlink:href="../assets/images/sprite.svg#icon-arrow-down"
+                      />
+                    </svg>
+                    <p class="accordion__summary-content">За столом сидели</p>
+                  </summary>
+                  <p class="accordion__text">
+                    За столом сидели мужики и ели Мясом конюх угощал своих
+                    гостей Все расхваливали ужин, и хозяин весел был О жене
+                    своей всё время говорил...
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__summary">
+                    <svg class="accordion__marker">
+                      <use
+                        xlink:href="../assets/images/sprite.svg#icon-arrow-down"
+                      />
+                    </svg>
+                    <p class="accordion__summary-content">У тебя на полке</p>
+                  </summary>
+                  <p class="accordion__text">
+                    У тебя на полке - Плюшевый мишка и заяц в футболке. Ты давно
+                    когда-то Ранним утром их нашла под ёлкой. А за старым шкафом
+                    - Портфель без ручки и летняя шляпа. Кто-то хитрый и большой
+                    Наблюдает за тобой.
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__summary">
+                    <svg class="accordion__marker">
+                      <use
+                        xlink:href="../assets/images/sprite.svg#icon-arrow-down"
+                      />
+                    </svg>
+                    <p class="accordion__summary-content">
+                      Просто я живу на улице Ленина
+                    </p>
+                  </summary>
+                  <p class="accordion__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </details>
+              </section>
+            </div>
             <div class="tabs features_aligment-stretch">
               <input
                 class="tabs__input"
@@ -245,11 +297,110 @@
               </div>
               <div class="tabs__content features__code">
                 <div class="features__code_html tabs__content_html">
-                  <pre><code class="language-html"> <!--copy html code-->
+                  <pre><code class="language-html">&lt;section class=&quot;accordion&quot;&gt;
+  &lt;details open class=&quot;accordion__item&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      &lt;svg class=&quot;accordion__marker&quot;&gt;
+        &lt;use xlink:href=&quot;../assets/images/sprite.svg#icon-arrow-down&quot; /&gt;
+      &lt;/svg&gt;
+      &lt;p class=&quot;accordion__summary-content&quot;&gt;За столом сидели&lt;/p&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      За столом сидели мужики и ели Мясом конюх угощал своих гостей Все
+      расхваливали ужин, и хозяин весел был О жене своей всё время
+      говорил...
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class=&quot;accordion__item&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      &lt;svg class=&quot;accordion__marker&quot;&gt;
+        &lt;use xlink:href=&quot;../assets/images/sprite.svg#icon-arrow-down&quot; /&gt;
+      &lt;/svg&gt;
+      &lt;p class=&quot;accordion__summary-content&quot;&gt;У тебя на полке&lt;/p&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      У тебя на полке - Плюшевый мишка и заяц в футболке. Ты давно когда-то
+      Ранним утром их нашла под ёлкой. А за старым шкафом - Портфель без
+      ручки и летняя шляпа. Кто-то хитрый и большой Наблюдает за тобой.
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class=&quot;accordion__item&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      &lt;svg class=&quot;accordion__marker&quot;&gt;
+        &lt;use xlink:href=&quot;../assets/images/sprite.svg#icon-arrow-down&quot; /&gt;
+      &lt;/svg&gt;
+      &lt;p class=&quot;accordion__summary-content&quot;&gt;
+        Просто я живу на улице Ленина
+      &lt;/p&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+    &lt;/p&gt;
+  &lt;/details&gt;
+&lt;/section&gt;
                   </code></pre>
                 </div>
                 <div class="features__code_css tabs__content_css">
-                  <pre><code class="language-html"> <!--copy css code-->
+                  <pre><code class="language-html">.accordion {
+  padding: 0 5px;
+}
+.accordion__item {
+    padding: 16px 16px;
+    margin-bottom: 8px;
+    background: var(--bg-white);
+    border: 1px solid var(--grey-3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+
+    position: relative;
+  }
+@media screen and (min-width: $bp-small) {
+.accordion__item {
+      padding: 24px 24px
+  }
+    }
+.accordion__item:last-child {
+    margin-bottom: 0;
+  }
+.accordion__text {
+    margin: 16px 0 8px 0;
+    color: var(--grey-4);
+  }
+.accordion__summary {
+    display: block;
+    cursor: pointer;
+  }
+.accordion__summary-content {
+    margin: 0 20px 0 0; 
+    color: var(--color-main);
+  }
+@media screen and (min-width: $bp-small) {
+.accordion__summary-content {
+      margin: 0 36px 0 0
+  }
+    }
+.accordion__summary::-webkit-details-marker {
+    display: none;
+  }
+.accordion__marker {
+    width: 16px;
+    height: 8px;
+    color: var(--color-grey-4);
+    position: absolute;
+    right: 16px;
+    top: 32px;
+  }
+@media screen and (min-width: $bp-small) {
+.accordion__marker {
+      right: 32px
+  }
+    }
+.accordion__item[open] .accordion__marker {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
                   </code></pre>
                 </div>
               </div>
@@ -270,6 +421,10 @@
       src="../10-lection8/01-theme-changer/theme-changer.js"
     ></script>
     <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script
+      defer
+      src="../libs/preload.js"
+    ></script>
   </body>
   <footer></footer>
 </html>

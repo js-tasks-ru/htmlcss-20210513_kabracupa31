@@ -10,10 +10,14 @@ body {
   &__box {
     margin: 0 auto;
     padding: 0 15px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $bp-small) {
       max-width: 1110px;
-      padding: 0;
+      padding: 0 16px;
     }
   }
-  
+  &__link {
+    text-decoration-line: none;
+    color: var(--color-main);
+    cursor: pointer;
+  }
 }

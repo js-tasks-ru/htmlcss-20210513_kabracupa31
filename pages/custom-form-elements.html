@@ -1,0 +1,534 @@
+<html lang="ru">
+  <meta charset="UTF-8" />
+  <head>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+    
+  </head>
+  <body class="preload"> <!--class="preload"-->
+    <div class="page-template">
+      <div class="page-template__inner">
+        <div
+          class="
+            header
+            header__container
+            header_background-template
+            header_padding-template
+          "
+        >
+          <svg class="header__menu-trigger" id="burger-menu-open">
+            <use xlink:href="../assets/images/sprite.svg#menu-icon" />
+          </svg>
+          <div class="header__logo">
+            <a class="page__link" href="../index.html">
+              <svg
+                width="110"
+                height="32"
+                viewBox="0 0 110 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="1" width="30" height="30" fill="currentColor" />
+                <rect
+                  x="38"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  fill="currentColor"
+                />
+                <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+          <div class="header__settings">
+            <nav class="nav">
+              <a href="" class="nav__item nav__item_active">Component</a>
+              <a href="" class="nav__item">About</a>
+              <a href="" class="nav__item">Contact</a>
+            </nav>
+            <div class="theme">
+              <svg class="theme__light">
+                <use xlink:href="../assets/images/sprite.svg#icon-sun" />
+              </svg>
+              <label class="theme__trigger toggler">
+                <input
+                  class="toggler__input"
+                  type="checkbox"
+                  id="theme-changer"
+                />
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <div class="toggler__icon"></div>
+                  </div>
+                </div>
+              </label>
+              <svg class="theme__dark">
+                <use xlink:href="../assets/images/sprite.svg#icon-moon" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+          <div class="burger-menu__header">
+            <div class="burger-menu__wrapper-icon" id="burger-menu-close">
+              <svg class="burger-menu__icon">
+                <use
+                  xlink:href="../assets\images\sprite.svg#icon-burger-close"
+                />
+              </svg>
+            </div>
+            <div class="burger-menu__logo">
+              <svg
+                width="110"
+                height="32"
+                viewBox="0 0 110 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="1" width="30" height="30" fill="currentColor" />
+                <rect
+                  x="38"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  fill="currentColor"
+                />
+                <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+              </svg>
+            </div>
+          </div>
+          <div class="burger-menu__body">
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__theme">
+              <span>Dark mode</span>
+              <label class="theme__trigger toggler">
+                <input
+                  class="toggler__input"
+                  type="checkbox"
+                  id="burger-theme-changer"
+                />
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <div class="toggler__icon"></div>
+                  </div>
+                  <div class="toggler__text"></div>
+                </div>
+              </label>
+            </div>
+            <div class="burger-menu__line"></div>
+
+            <div class="sidebar__items">
+              <h3 class="sidebar__items-title">Elements</h3>
+              <div class="sidebar__items-list">
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./avatar.html">Avatar</a>
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./custom-form-elements.html"
+                    >Custom form elements</a
+                  >
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./histogram.html">Histogram</a>
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./skeleton.html">Skeleton</a>
+                </h4>
+              </div>
+            </div>
+            <div class="sidebar__items">
+              <h3 class="sidebar__items-title">Containers</h3>
+              <div class="sidebar__items-list">
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./calendar.html">Calendar</a>
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./modal-dialog.html"
+                    >Modal dialog</a
+                  >
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./tooltip.html">Tooltip</a>
+                </h4>
+                <h4 class="sidebar__item">
+                  <a class="sidebar__link" href="./accordion.html">Accordion</a>
+                </h4>
+              </div>
+            </div>
+            <div class="sidebar__items">
+              <h3 class="sidebar__items-title">Templates</h3>
+              <div class="sidebar__items-list"></div>
+            </div>
+            <h4 class="sidebar__item">
+              <a class="sidebar__link" href="../index.html">Main page</a>
+            </h4>
+          </div>
+        </div>
+        <div class="main-template">
+          <div class="sidebar">
+            <div class="sidebar__items">
+              <h4 class="sidebar__items-title">Elements</h4>
+              <div class="sidebar__items-list">
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./avatar.html"
+                    >Avatar</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a
+                    class="sidebar__link sidebar__link_highlighted"
+                    href="./custom-form-elements.html"
+                    >Custom form elements</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./histogram.html"
+                    >Histogram</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./skeleton.html"
+                    >Skeleton</a
+                  ></small
+                >
+              </div>
+            </div>
+            <div class="sidebar__items">
+              <h4 class="sidebar__items-title">Containers</h4>
+              <div class="sidebar__items-list">
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./calendar.html"
+                    >Calendar</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./modal-dialog.html"
+                    >Modal dialog</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./tooltip.html"
+                    >Tooltip</a
+                  ></small
+                >
+                <small class="sidebar__item"
+                  ><a class="sidebar__link" href="./accordion.html"
+                    >Accordion</a
+                  ></small
+                >
+              </div>
+            </div>
+            <div class="sidebar__items">
+              <h4 class="sidebar__items-title">Templates</h4>
+              <div class="sidebar__items-list"></div>
+            </div>
+          </div>
+          <div class="features features_margin-bottom">
+            <h3 class="features__header">Custom form elements</h3>
+            <div class="features__element features__element_grids">
+              <div class="features__element_grid features__element_grid-3">
+                <!--radio-->
+                <label class="radio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="radio"
+                    value="radio1"
+                  />
+                  <div class="radio__state">
+                    <div class="radio__control">
+                      <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__text radio__text_default"></div>
+                  </div>
+                </label>
+                <label class="radio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="radio"
+                    value="radio2"
+                    checked
+                  />
+                  <div class="radio__state">
+                    <div class="radio__control">
+                      <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__text radio__text_default"></div>
+                  </div>
+                </label>
+                <label class="radio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="radio"
+                    value="radio3"
+                    disabled
+                  />
+                  <div class="radio__state">
+                    <div class="radio__control">
+                      <div class="radio__icon"></div>
+                    </div>
+                    <div class="radio__text">Disabled</div>
+                  </div>
+                </label>
+                <!--checkbox-->
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" value="" />
+                  <div class="checkbox__state">
+                    <div class="checkbox__control">
+                      <svg class="checkbox__icon">
+                        <use
+                          xlink:href="../assets/images/sprite.svg#checkbox-icon"
+                        />
+                      </svg>
+                    </div>
+                    <div class="checkbox__text checkbox__text_default"></div>
+                  </div>
+                </label>
+                <label class="checkbox">
+                  <input
+                    class="checkbox__input" 
+                    type="checkbox"
+                    value=""
+                    checked
+                  /> <!--preload-->
+                  <div class="checkbox__state">
+                    <div class="checkbox__control">
+                      <svg class="checkbox__icon">
+                        <use
+                          xlink:href="../assets/images/sprite.svg#checkbox-icon"
+                        />
+                      </svg>
+                    </div>
+                    <div class="checkbox__text checkbox__text_default"></div>
+                  </div>
+                </label>
+                <label class="checkbox"> <!-- preload-->
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    value=""
+                    disabled
+                  />
+                  <div class="checkbox__state">
+                    <div class="checkbox__control">
+                      <svg class="checkbox__icon">
+                        <use
+                          xlink:href="../assets/images/sprite.svg#checkbox-icon"
+                        />
+                      </svg>
+                    </div>
+                    <div class="checkbox__text">Disabled</div>
+                  </div>
+                </label>
+
+                <label class="toggler">
+                  <input class="toggler__input" type="checkbox" />
+                  <div class="toggler__state">
+                    <div class="toggler__control">
+                      <div class="toggler__icon"></div>
+                    </div>
+                    <div class="toggler__text toggler__text_default"></div>
+                  </div>
+                </label>
+                <label class="toggler">
+                  <input class="toggler__input" type="checkbox" checked />
+                  <div class="toggler__state">
+                    <div class="toggler__control">
+                      <div class="toggler__icon"></div>
+                    </div>
+                    <div class="toggler__text toggler__text_default"></div>
+                  </div>
+                </label>
+                <label class="toggler">
+                  <input class="toggler__input" type="checkbox" disabled />
+                  <div class="toggler__state">
+                    <div class="toggler__control">
+                      <div class="toggler__icon"></div>
+                    </div>
+                    <div class="toggler__text">Disabled</div>
+                  </div>
+                </label>
+              </div>
+              <!--input-->
+              <label class="custom-input">
+                <div class="custom-input__icon">
+                  <svg class="custom-input__icon-success">
+                    <use
+                      xlink:href="../assets/images/sprite.svg#icon-success"
+                    />
+                  </svg>
+                  <svg class="custom-input__icon-error">
+                    <use xlink:href="../assets/images/sprite.svg#icon-error" />
+                  </svg>
+                </div>
+                <div class="custom-input__label">label</div>
+                <input
+                  type="text"
+                  id="custom-input__input"
+                  name="name"
+                  class="custom-input__input"
+                  placeholder="Placeholder"
+                />
+              </label>
+              <label class="custom-input">
+                <div class="custom-input__icon">
+                  <svg class="custom-input__icon-success">
+                    <use
+                      xlink:href="../assets/images/sprite.svg#icon-success"
+                    />
+                  </svg>
+                  <svg class="custom-input__icon-error">
+                    <use xlink:href="../assets/images/sprite.svg#icon-error" />
+                  </svg>
+                </div>
+                <div class="custom-input__label">FOCUS</div>
+                <input
+                  type="text"
+                  id="custom-input__input"
+                  name="name"
+                  class="custom-input__input"
+                  value="Filled Input"
+                  placeholder="Placeholder"
+                />
+              </label>
+              <label class="custom-input custom-input_successed">
+                <div class="custom-input__icon">
+                  <svg class="custom-input__icon-success">
+                    <use
+                      xlink:href="../assets/images/sprite.svg#icon-success"
+                    />
+                  </svg>
+                  <svg class="custom-input__icon-error">
+                    <use xlink:href="../assets/images/sprite.svg#icon-error" />
+                  </svg>
+                </div>
+                <div class="custom-input__label">SUCCESS</div>
+                <input
+                  type="text"
+                  id="custom-input__input"
+                  name="name"
+                  class="custom-input__input"
+                  value="Success"
+                  placeholder="Placeholder"
+                />
+              </label>
+              <label class="custom-input custom-input_failed">
+                <div class="custom-input__icon">
+                  <svg class="custom-input__icon-success">
+                    <use
+                      xlink:href="../assets/images/sprite.svg#icon-success"
+                    />
+                  </svg>
+                  <svg class="custom-input__icon-error">
+                    <use xlink:href="../assets/images/sprite.svg#icon-error" />
+                  </svg>
+                </div>
+                <div class="custom-input__label">error</div>
+                <input
+                  type="text"
+                  id="custom-input__input"
+                  name="name"
+                  class="custom-input__input"
+                  value="Error"
+                  placeholder="Placeholder"
+                />
+              </label>
+              <label class="custom-input">
+                <div class="custom-input__icon">
+                  <svg class="custom-input__icon-success">
+                    <use
+                      xlink:href="../assets/images/sprite.svg#icon-success"
+                    />
+                  </svg>
+                  <svg class="custom-input__icon-error">
+                    <use xlink:href="../assets/images/sprite.svg#icon-error" />
+                  </svg>
+                </div>
+                <div class="custom-input__label">disabled</div>
+                <input
+                  type="text"
+                  id="custom-input__input"
+                  name="name"
+                  class="custom-input__input"
+                  value="Disabled"
+                  placeholder="Placeholder"
+                  disabled
+                />
+              </label>
+              <!--buttons-->
+              <div class="features__element_grid features__element_grid-4">
+                <h4 class="main-template_color">Default</h4>
+                <button
+                  type="button"
+                  class="button button_primary button_full-width"
+                >
+                  <p class="button__text">Primary</p>
+                </button>
+                <button
+                  type="button"
+                  class="button button_secondary button_full-width"
+                >
+                  <p class="button__text">Secondary</p>
+                </button>
+                <button
+                  type="button"
+                  class="button button_alternated button_full-width"
+                >
+                  <p class="button__text button__text_alternated">Alternate</p>
+                </button>
+                <h4 class="main-template_color">Disabled</h4>
+                <button
+                  disabled
+                  type="button"
+                  class="
+                    button button_primary button_disabled button_full-width
+                  "
+                >
+                  <p class="button__text">Primary</p>
+                </button>
+                <button
+                  disabled
+                  type="button"
+                  class="
+                    button button_secondary button_disabled button_full-width
+                  "
+                >
+                  <p class="button__text">Secondary</p>
+                </button>
+                <button
+                  disabled
+                  type="button"
+                  class="
+                    button button_alternated button_disabled button_full-width
+                  "
+                >
+                  <p class="button__text button__text_alternated">Alternate</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_template">
+          <footer class="footer__container">
+            <h5 class="footer__title footer__title_template">
+              Reusable component library
+            </h5>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="../10-lection8/01-theme-changer/theme-changer.js"
+    ></script>
+    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script
+      defer
+      src="../libs/preload.js"
+    ></script>
+  </body>
+  <footer></footer>
+</html>

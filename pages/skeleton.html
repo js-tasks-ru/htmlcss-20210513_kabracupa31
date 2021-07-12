@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
+  <body class="preload">
     <div class="page-template">
       <div class="page-template__inner">
         <div
@@ -60,6 +60,7 @@
                   <div class="toggler__control">
                     <div class="toggler__icon"></div>
                   </div>
+                  <div class="toggler__text"></div>
                 </div>
               </label>
               <svg class="theme__dark">
@@ -185,7 +186,9 @@
                   ></small
                 >
                 <small class="sidebar__item"
-                  ><a class="sidebar__link" href="./skeleton.html"
+                  ><a
+                    class="sidebar__link sidebar__link_highlighted"
+                    href="./skeleton.html"
                     >Skeleton</a
                   ></small
                 >
@@ -222,10 +225,26 @@
             </div>
           </div>
           <div class="features">
-            <h3 class="features__header"></h3>
-            <!--copy element name-->
-            <div class="features__element"></div>
-            <!--copy element-->
+            <h3 class="features__header">Skeleton</h3>
+            <div class="features__element features_aligment-stretch">
+              <div class="skeleton preload-animation">
+                <div class="skeleton__header">
+                  <div class="skeleton__avatar"></div>
+                  <div class="skeleton__header-lines">
+                    <div
+                      class="skeleton__line skeleton__header-line_shorter"
+                    ></div>
+                    <div
+                      class="skeleton__line skeleton__header-line_short"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skeleton__content">
+                  <div class="skeleton__line"></div>
+                  <div class="skeleton__line"></div>
+                </div>
+              </div>
+            </div>
             <div class="tabs features_aligment-stretch">
               <input
                 class="tabs__input"
@@ -245,11 +264,177 @@
               </div>
               <div class="tabs__content features__code">
                 <div class="features__code_html tabs__content_html">
-                  <pre><code class="language-html"> <!--copy html code-->
+                  <pre><code class="language-html"> &lt;div class=&quot;skeleton&quot;&gt;
+  &lt;div class=&quot;skeleton__header&quot;&gt;
+    &lt;div class=&quot;skeleton__avatar&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;skeleton__header-lines&quot;&gt;
+      &lt;div class=&quot;skeleton__line skeleton__header-line_shorter&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;skeleton__line skeleton__header-line_short&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;skeleton__content&quot;&gt;
+    &lt;div class=&quot;skeleton__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;skeleton__line&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
                   </code></pre>
                 </div>
                 <div class="features__code_css tabs__content_css">
-                  <pre><code class="language-html"> <!--copy css code-->
+                  <pre><code class="language-html">.skeleton {
+  padding: 24px;
+
+  background-color: var(--bg-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: $bp-small) {
+.skeleton {
+    border: 1px solid var(--grey-3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px
+}
+  }
+.skeleton__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    gap: 16px;
+  }
+.skeleton__avatar {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+  background: -o-linear-gradient(
+    357.49deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background-size: 200%;
+  -webkit-animation-name: gradient;
+          animation-name: gradient;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  }
+@media screen and (min-width: $bp-small) {
+.skeleton__avatar {
+      height: 64px;
+      width: 64px
+  }
+    }
+.skeleton__header-lines {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+.skeleton__line {
+    height: 20px;
+  background: -o-linear-gradient(
+    357.49deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  background-size: 200%;
+  -webkit-animation-name: gradient;
+          animation-name: gradient;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  }
+.skeleton__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+.skeleton__line + .skeleton__line {
+    margin-top: 8px;
+  }
+.skeleton__header-line_shorter {
+    width: 60%;
+  }
+.skeleton__header-line_short {
+    width: 80%;
+  }
+@-webkit-keyframes gradient {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
                   </code></pre>
                 </div>
               </div>
@@ -270,6 +455,10 @@
       src="../10-lection8/01-theme-changer/theme-changer.js"
     ></script>
     <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script
+      defer
+      src="../libs/preload.js"
+    ></script>
   </body>
   <footer></footer>
 </html>
