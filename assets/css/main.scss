@@ -67,7 +67,7 @@ $bp-medium: 1024px;
 .no-pointer-events{
   pointer-events: none;
 }
-.preload *:not(.skeleton *) {
+.preload *:not(.preload-animation *) {
  /* -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
